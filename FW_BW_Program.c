@@ -1,3 +1,18 @@
+//This Program implements a simple pattern, moving the rover forward and Backward. 
+/* Pin Connections
+5v -> 5v
+Gnd -> Gnd
+ENA -> P2.4
+ENB -> P2.5
+In1 -> P2.0
+In2 -> P2.6
+In3 -> P2.2
+In4 -> P2.3
+
+J3 & J5 Motor A
+J1 & J2 Motor B
+*/ 
+
 #include <msp430.h>
 
 volatile unsigned int ms_count = 0;
@@ -62,4 +77,5 @@ __interrupt void Timer0_A0_ISR(void)
 {
     ms_count++;
 }
+
 

@@ -1,0 +1,32 @@
+[
+{
+  "directory": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build",
+  "command": "\"C:/Program Files/ti/msp430-GCC/bin/msp430-elf-g++.exe\"  -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/header\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot\" -mmcu=msp430fr6989 -I\"C:\\Program Files\\ti\\msp430-GCC\\include\" -L\"C:\\Program Files\\ti\\msp430-GCC\\include\" -g -std=c++11 -o CMakeFiles/CombatRobot.dir/combatRobot/main.cpp.obj -c \"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/main.cpp\"",
+  "file": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/main.cpp",
+  "output": "CMakeFiles/CombatRobot.dir/combatRobot/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build",
+  "command": "\"C:/Program Files/ti/msp430-GCC/bin/msp430-elf-g++.exe\"  -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/header\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot\" -mmcu=msp430fr6989 -I\"C:\\Program Files\\ti\\msp430-GCC\\include\" -L\"C:\\Program Files\\ti\\msp430-GCC\\include\" -g -std=c++11 -o CMakeFiles/CombatRobot.dir/combatRobot/source/device.cpp.obj -c \"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source/device.cpp\"",
+  "file": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source/device.cpp",
+  "output": "CMakeFiles/CombatRobot.dir/combatRobot/source/device.cpp.obj"
+},
+{
+  "directory": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build",
+  "command": "\"C:/Program Files/ti/msp430-GCC/bin/msp430-elf-g++.exe\"  -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/header\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot\" -mmcu=msp430fr6989 -I\"C:\\Program Files\\ti\\msp430-GCC\\include\" -L\"C:\\Program Files\\ti\\msp430-GCC\\include\" -g -std=c++11 -o CMakeFiles/CombatRobot.dir/combatRobot/source/pins.cpp.obj -c \"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source/pins.cpp\"",
+  "file": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source/pins.cpp",
+  "output": "CMakeFiles/CombatRobot.dir/combatRobot/source/pins.cpp.obj"
+},
+{
+  "directory": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build",
+  "command": "\"C:/Program Files/ti/msp430-GCC/bin/msp430-elf-g++.exe\"  -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/header\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot\" -mmcu=msp430fr6989 -I\"C:\\Program Files\\ti\\msp430-GCC\\include\" -L\"C:\\Program Files\\ti\\msp430-GCC\\include\" -g -std=c++11 -o CMakeFiles/CombatRobot.dir/combatRobot/source/pwm.cpp.obj -c \"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source/pwm.cpp\"",
+  "file": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source/pwm.cpp",
+  "output": "CMakeFiles/CombatRobot.dir/combatRobot/source/pwm.cpp.obj"
+},
+{
+  "directory": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build",
+  "command": "\"C:/Program Files/ti/msp430-GCC/bin/msp430-elf-g++.exe\"  -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/header\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot\" -mmcu=msp430fr6989 -I\"C:\\Program Files\\ti\\msp430-GCC\\include\" -L\"C:\\Program Files\\ti\\msp430-GCC\\include\" -g -std=c++11 -o CMakeFiles/CombatRobot.dir/combatRobot/source/motors.cpp.obj -c \"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source/motors.cpp\"",
+  "file": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source/motors.cpp",
+  "output": "CMakeFiles/CombatRobot.dir/combatRobot/source/motors.cpp.obj"
+}
+]

@@ -1,0 +1,393 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The target system is: Generic -  - msp430
+      The host system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/ti/msp430-GCC/bin/msp430-elf-g++.exe 
+      Build flags: -mmcu=msp430fr6989;-IC:\\Program Files\\ti\\msp430-GCC\\include;-LC:\\Program Files\\ti\\msp430-GCC\\include
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles/4.0.2/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/ti/msp430-GCC/bin/msp430-elf-gcc.exe 
+      Build flags: -mmcu=msp430fr6989;-IC:\\Program Files\\ti\\msp430-GCC\\include;-LC:\\Program Files\\ti\\msp430-GCC\\include
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles/4.0.2/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles/CMakeScratch/TryCompile-t6jw1a"
+      binary: "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles/CMakeScratch/TryCompile-t6jw1a"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-mmcu=msp430fr6989 -I\"C:\\Program Files\\ti\\msp430-GCC\\include\" -L\"C:\\Program Files\\ti\\msp430-GCC\\include\""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles/CMakeScratch/TryCompile-t6jw1a'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/MSYS2/usr/bin/make.exe -f Makefile cmTC_8706b/fast
+        /c/PROGRA~1/MSYS2/usr/bin/make  -f CMakeFiles/cmTC_8706b.dir/build.make CMakeFiles/cmTC_8706b.dir/build
+        make[1]: Entering directory '/c/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles/CMakeScratch/TryCompile-t6jw1a'
+        Building CXX object CMakeFiles/cmTC_8706b.dir/CMakeCXXCompilerABI.cpp.obj
+        "C:/Program Files/ti/msp430-GCC/bin/msp430-elf-g++.exe"   -mmcu=msp430fr6989 -I"C:\\Program Files\\ti\\msp430-GCC\\include" -L"C:\\Program Files\\ti\\msp430-GCC\\include"    -v -o CMakeFiles/cmTC_8706b.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp"
+        Using built-in specs.
+        COLLECT_GCC=C:\\Program Files\\ti\\msp430-GCC\\bin\\msp430-elf-g++.exe
+        Target: msp430-elf
+        Configured with: ../../gcc/configure --target=msp430-elf --enable-languages=c,c++ --disable-nls --enable-initfini-array --build=x86_64-pc-linux-gnu --host=i686-w64-mingw32 --enable-target-optspace --enable-newlib-nano-formatted-io --with-pkgversion='Mitto Systems Limited - msp430-gcc 9.3.1.11'
+        Thread model: single
+        gcc version 9.3.1 (Mitto Systems Limited - msp430-gcc 9.3.1.11) 
+        COLLECT_GCC_OPTIONS='-mmcu=msp430fr6989' '-I' 'C:\\Program Files\\ti\\msp430-GCC\\include' '-LC:\\Program Files\\ti\\msp430-GCC\\include' '-v' '-o' 'CMakeFiles/cmTC_8706b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=msp430xv2'
+         c:/program files/ti/msp430-gcc/bin/../libexec/gcc/msp430-elf/9.3.1/cc1plus.exe -quiet -v -I C:\\Program Files\\ti\\msp430-GCC\\include -iprefix c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/ C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mmcu=msp430fr6989 -mcpu=msp430xv2 -auxbase-strip CMakeFiles/cmTC_8706b.dir/CMakeCXXCompilerABI.cpp.obj -version -fno-exceptions -o C:\\Users\\blake\\AppData\\Local\\Temp\\ccz5AZ55.s
+        GNU C++14 (Mitto Systems Limited - msp430-gcc 9.3.1.11) version 9.3.1 (msp430-elf)
+        	compiled by GNU C version 4.9.3 20150626 (Fedora MinGW 4.9.3-1.el7), GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/sys-include"
+        ignoring duplicate directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include/c++/9.3.1"
+        ignoring duplicate directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include/c++/9.3.1/msp430-elf"
+        ignoring duplicate directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include/c++/9.3.1/backward"
+        ignoring duplicate directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/include"
+        ignoring duplicate directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/include-fixed"
+        ignoring nonexistent directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/sys-include"
+        ignoring duplicate directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:\\Program Files\\ti\\msp430-GCC\\include
+         c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include/c++/9.3.1
+         c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include/c++/9.3.1/msp430-elf
+         c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include/c++/9.3.1/backward
+         c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/include
+         c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/include-fixed
+         c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include
+        End of search list.
+        GNU C++14 (Mitto Systems Limited - msp430-gcc 9.3.1.11) version 9.3.1 (msp430-elf)
+        	compiled by GNU C version 4.9.3 20150626 (Fedora MinGW 4.9.3-1.el7), GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 46e4c25db5eba2ab18fbd02c9a59c8c3
+        COLLECT_GCC_OPTIONS='-mmcu=msp430fr6989' '-I' 'C:\\Program Files\\ti\\msp430-GCC\\include' '-LC:\\Program Files\\ti\\msp430-GCC\\include' '-v' '-o' 'CMakeFiles/cmTC_8706b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=msp430xv2'
+         c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/bin/as.exe --traditional-format -mP -mcpu=msp430xv2 -o CMakeFiles/cmTC_8706b.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\blake\\AppData\\Local\\Temp\\ccz5AZ55.s
+        COMPILER_PATH=c:/program files/ti/msp430-gcc/bin/../libexec/gcc/msp430-elf/9.3.1/;c:/program files/ti/msp430-gcc/bin/../libexec/gcc/;c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/bin/
+        LIBRARY_PATH=c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/;c:/program files/ti/msp430-gcc/bin/../lib/gcc/;c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/lib/
+        COLLECT_GCC_OPTIONS='-mmcu=msp430fr6989' '-I' 'C:\\Program Files\\ti\\msp430-GCC\\include' '-LC:\\Program Files\\ti\\msp430-GCC\\include' '-v' '-o' 'CMakeFiles/cmTC_8706b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=msp430xv2'
+        Linking CXX static library libcmTC_8706b.a
+        "C:/Program Files/CMake/bin/cmake.exe" -P CMakeFiles/cmTC_8706b.dir/cmake_clean_target.cmake
+        "C:/Program Files/CMake/bin/cmake.exe" -E cmake_link_script CMakeFiles/cmTC_8706b.dir/link.txt --verbose=1
+        "C:/Program Files/ti/msp430-GCC/bin/msp430-elf-ar.exe" qc libcmTC_8706b.a CMakeFiles/cmTC_8706b.dir/CMakeCXXCompilerABI.cpp.obj
+        "C:/Program Files/ti/msp430-GCC/bin/msp430-elf-ranlib.exe" libcmTC_8706b.a
+        make[1]: Leaving directory '/c/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles/CMakeScratch/TryCompile-t6jw1a'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Program Files/ti/msp430-GCC/include]
+          add: [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include/c++/9.3.1]
+          add: [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include/c++/9.3.1/msp430-elf]
+          add: [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include/c++/9.3.1/backward]
+          add: [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/include]
+          add: [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/include-fixed]
+          add: [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include]
+        end of search list found
+        collapse include dir [C:/Program Files/ti/msp430-GCC/include] ==> [C:/Program Files/ti/msp430-GCC/include]
+        collapse include dir [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include/c++/9.3.1] ==> [C:/Program Files/ti/msp430-GCC/msp430-elf/include/c++/9.3.1]
+        collapse include dir [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include/c++/9.3.1/msp430-elf] ==> [C:/Program Files/ti/msp430-GCC/msp430-elf/include/c++/9.3.1/msp430-elf]
+        collapse include dir [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include/c++/9.3.1/backward] ==> [C:/Program Files/ti/msp430-GCC/msp430-elf/include/c++/9.3.1/backward]
+        collapse include dir [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/include] ==> [C:/Program Files/ti/msp430-GCC/lib/gcc/msp430-elf/9.3.1/include]
+        collapse include dir [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/include-fixed] ==> [C:/Program Files/ti/msp430-GCC/lib/gcc/msp430-elf/9.3.1/include-fixed]
+        collapse include dir [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include] ==> [C:/Program Files/ti/msp430-GCC/msp430-elf/include]
+        implicit include dirs: [C:/Program Files/ti/msp430-GCC/include;C:/Program Files/ti/msp430-GCC/msp430-elf/include/c++/9.3.1;C:/Program Files/ti/msp430-GCC/msp430-elf/include/c++/9.3.1/msp430-elf;C:/Program Files/ti/msp430-GCC/msp430-elf/include/c++/9.3.1/backward;C:/Program Files/ti/msp430-GCC/lib/gcc/msp430-elf/9.3.1/include;C:/Program Files/ti/msp430-GCC/lib/gcc/msp430-elf/9.3.1/include-fixed;C:/Program Files/ti/msp430-GCC/msp430-elf/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles/CMakeScratch/TryCompile-t6jw1a']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/MSYS2/usr/bin/make.exe -f Makefile cmTC_8706b/fast]
+        ignore line: [/c/PROGRA~1/MSYS2/usr/bin/make  -f CMakeFiles/cmTC_8706b.dir/build.make CMakeFiles/cmTC_8706b.dir/build]
+        ignore line: [make[1]: Entering directory '/c/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles/CMakeScratch/TryCompile-t6jw1a']
+        ignore line: [Building CXX object CMakeFiles/cmTC_8706b.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: ["C:/Program Files/ti/msp430-GCC/bin/msp430-elf-g++.exe"   -mmcu=msp430fr6989 -I"C:\\Program Files\\ti\\msp430-GCC\\include" -L"C:\\Program Files\\ti\\msp430-GCC\\include"    -v -o CMakeFiles/cmTC_8706b.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Program Files\\ti\\msp430-GCC\\bin\\msp430-elf-g++.exe]
+        ignore line: [Target: msp430-elf]
+        ignore line: [Configured with: ../../gcc/configure --target=msp430-elf --enable-languages=c c++ --disable-nls --enable-initfini-array --build=x86_64-pc-linux-gnu --host=i686-w64-mingw32 --enable-target-optspace --enable-newlib-nano-formatted-io --with-pkgversion='Mitto Systems Limited - msp430-gcc 9.3.1.11']
+        ignore line: [Thread model: single]
+        ignore line: [gcc version 9.3.1 (Mitto Systems Limited - msp430-gcc 9.3.1.11) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mmcu=msp430fr6989' '-I' 'C:\\Program Files\\ti\\msp430-GCC\\include' '-LC:\\Program Files\\ti\\msp430-GCC\\include' '-v' '-o' 'CMakeFiles/cmTC_8706b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=msp430xv2']
+        ignore line: [ c:/program files/ti/msp430-gcc/bin/../libexec/gcc/msp430-elf/9.3.1/cc1plus.exe -quiet -v -I C:\\Program Files\\ti\\msp430-GCC\\include -iprefix c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/ C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mmcu=msp430fr6989 -mcpu=msp430xv2 -auxbase-strip CMakeFiles/cmTC_8706b.dir/CMakeCXXCompilerABI.cpp.obj -version -fno-exceptions -o C:\\Users\\blake\\AppData\\Local\\Temp\\ccz5AZ55.s]
+        ignore line: [GNU C++14 (Mitto Systems Limited - msp430-gcc 9.3.1.11) version 9.3.1 (msp430-elf)]
+        ignore line: [	compiled by GNU C version 4.9.3 20150626 (Fedora MinGW 4.9.3-1.el7)  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/sys-include"]
+        ignore line: [ignoring duplicate directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include/c++/9.3.1"]
+        ignore line: [ignoring duplicate directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include/c++/9.3.1/msp430-elf"]
+        ignore line: [ignoring duplicate directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include/c++/9.3.1/backward"]
+        ignore line: [ignoring duplicate directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/include"]
+        ignore line: [ignoring duplicate directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/include-fixed"]
+        ignore line: [ignoring nonexistent directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/sys-include"]
+        ignore line: [ignoring duplicate directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:\\Program Files\\ti\\msp430-GCC\\include]
+        ignore line: [ c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include/c++/9.3.1]
+        ignore line: [ c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include/c++/9.3.1/msp430-elf]
+        ignore line: [ c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include/c++/9.3.1/backward]
+        ignore line: [ c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/include]
+        ignore line: [ c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/include-fixed]
+        ignore line: [ c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (Mitto Systems Limited - msp430-gcc 9.3.1.11) version 9.3.1 (msp430-elf)]
+        ignore line: [	compiled by GNU C version 4.9.3 20150626 (Fedora MinGW 4.9.3-1.el7)  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 46e4c25db5eba2ab18fbd02c9a59c8c3]
+        ignore line: [COLLECT_GCC_OPTIONS='-mmcu=msp430fr6989' '-I' 'C:\\Program Files\\ti\\msp430-GCC\\include' '-LC:\\Program Files\\ti\\msp430-GCC\\include' '-v' '-o' 'CMakeFiles/cmTC_8706b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=msp430xv2']
+        ignore line: [ c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/bin/as.exe --traditional-format -mP -mcpu=msp430xv2 -o CMakeFiles/cmTC_8706b.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\blake\\AppData\\Local\\Temp\\ccz5AZ55.s]
+        ignore line: [COMPILER_PATH=c:/program files/ti/msp430-gcc/bin/../libexec/gcc/msp430-elf/9.3.1/]
+        ignore line: [c:/program files/ti/msp430-gcc/bin/../libexec/gcc/]
+        ignore line: [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/bin/]
+        ignore line: [LIBRARY_PATH=c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/]
+        ignore line: [c:/program files/ti/msp430-gcc/bin/../lib/gcc/]
+        ignore line: [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mmcu=msp430fr6989' '-I' 'C:\\Program Files\\ti\\msp430-GCC\\include' '-LC:\\Program Files\\ti\\msp430-GCC\\include' '-v' '-o' 'CMakeFiles/cmTC_8706b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=msp430xv2']
+        ignore line: [Linking CXX static library libcmTC_8706b.a]
+        ignore line: ["C:/Program Files/CMake/bin/cmake.exe" -P CMakeFiles/cmTC_8706b.dir/cmake_clean_target.cmake]
+        ignore line: ["C:/Program Files/CMake/bin/cmake.exe" -E cmake_link_script CMakeFiles/cmTC_8706b.dir/link.txt --verbose=1]
+        ignore line: ["C:/Program Files/ti/msp430-GCC/bin/msp430-elf-ar.exe" qc libcmTC_8706b.a CMakeFiles/cmTC_8706b.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: ["C:/Program Files/ti/msp430-GCC/bin/msp430-elf-ranlib.exe" libcmTC_8706b.a]
+        ignore line: [make[1]: Leaving directory '/c/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles/CMakeScratch/TryCompile-t6jw1a']
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles/CMakeScratch/TryCompile-fbfx3x"
+      binary: "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles/CMakeScratch/TryCompile-fbfx3x"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-mmcu=msp430fr6989 -I\"C:\\Program Files\\ti\\msp430-GCC\\include\" -L\"C:\\Program Files\\ti\\msp430-GCC\\include\""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles/CMakeScratch/TryCompile-fbfx3x'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/MSYS2/usr/bin/make.exe -f Makefile cmTC_17e71/fast
+        /c/PROGRA~1/MSYS2/usr/bin/make  -f CMakeFiles/cmTC_17e71.dir/build.make CMakeFiles/cmTC_17e71.dir/build
+        make[1]: Entering directory '/c/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles/CMakeScratch/TryCompile-fbfx3x'
+        Building C object CMakeFiles/cmTC_17e71.dir/CMakeCCompilerABI.c.obj
+        "C:/Program Files/ti/msp430-GCC/bin/msp430-elf-gcc.exe"   -mmcu=msp430fr6989 -I"C:\\Program Files\\ti\\msp430-GCC\\include" -L"C:\\Program Files\\ti\\msp430-GCC\\include"    -v -o CMakeFiles/cmTC_17e71.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCCompilerABI.c"
+        Using built-in specs.
+        COLLECT_GCC=C:\\Program Files\\ti\\msp430-GCC\\bin\\msp430-elf-gcc.exe
+        Target: msp430-elf
+        Configured with: ../../gcc/configure --target=msp430-elf --enable-languages=c,c++ --disable-nls --enable-initfini-array --build=x86_64-pc-linux-gnu --host=i686-w64-mingw32 --enable-target-optspace --enable-newlib-nano-formatted-io --with-pkgversion='Mitto Systems Limited - msp430-gcc 9.3.1.11'
+        Thread model: single
+        gcc version 9.3.1 (Mitto Systems Limited - msp430-gcc 9.3.1.11) 
+        COLLECT_GCC_OPTIONS='-mmcu=msp430fr6989' '-I' 'C:\\Program Files\\ti\\msp430-GCC\\include' '-LC:\\Program Files\\ti\\msp430-GCC\\include' '-v' '-o' 'CMakeFiles/cmTC_17e71.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=msp430xv2'
+         c:/program files/ti/msp430-gcc/bin/../libexec/gcc/msp430-elf/9.3.1/cc1.exe -quiet -v -I C:\\Program Files\\ti\\msp430-GCC\\include -iprefix c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/ C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mmcu=msp430fr6989 -mcpu=msp430xv2 -auxbase-strip CMakeFiles/cmTC_17e71.dir/CMakeCCompilerABI.c.obj -version -o C:\\Users\\blake\\AppData\\Local\\Temp\\cckPYfWW.s
+        GNU C17 (Mitto Systems Limited - msp430-gcc 9.3.1.11) version 9.3.1 (msp430-elf)
+        	compiled by GNU C version 4.9.3 20150626 (Fedora MinGW 4.9.3-1.el7), GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/sys-include"
+        ignoring duplicate directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/include"
+        ignoring duplicate directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/include-fixed"
+        ignoring nonexistent directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/sys-include"
+        ignoring duplicate directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:\\Program Files\\ti\\msp430-GCC\\include
+         c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/include
+         c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/include-fixed
+         c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include
+        End of search list.
+        GNU C17 (Mitto Systems Limited - msp430-gcc 9.3.1.11) version 9.3.1 (msp430-elf)
+        	compiled by GNU C version 4.9.3 20150626 (Fedora MinGW 4.9.3-1.el7), GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: b4644dc5df0be7dc32c943c41af9774c
+        COLLECT_GCC_OPTIONS='-mmcu=msp430fr6989' '-I' 'C:\\Program Files\\ti\\msp430-GCC\\include' '-LC:\\Program Files\\ti\\msp430-GCC\\include' '-v' '-o' 'CMakeFiles/cmTC_17e71.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=msp430xv2'
+         c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/bin/as.exe --traditional-format -mP -mcpu=msp430xv2 -o CMakeFiles/cmTC_17e71.dir/CMakeCCompilerABI.c.obj C:\\Users\\blake\\AppData\\Local\\Temp\\cckPYfWW.s
+        COMPILER_PATH=c:/program files/ti/msp430-gcc/bin/../libexec/gcc/msp430-elf/9.3.1/;c:/program files/ti/msp430-gcc/bin/../libexec/gcc/;c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/bin/
+        LIBRARY_PATH=c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/;c:/program files/ti/msp430-gcc/bin/../lib/gcc/;c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/lib/
+        COLLECT_GCC_OPTIONS='-mmcu=msp430fr6989' '-I' 'C:\\Program Files\\ti\\msp430-GCC\\include' '-LC:\\Program Files\\ti\\msp430-GCC\\include' '-v' '-o' 'CMakeFiles/cmTC_17e71.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=msp430xv2'
+        Linking C static library libcmTC_17e71.a
+        "C:/Program Files/CMake/bin/cmake.exe" -P CMakeFiles/cmTC_17e71.dir/cmake_clean_target.cmake
+        "C:/Program Files/CMake/bin/cmake.exe" -E cmake_link_script CMakeFiles/cmTC_17e71.dir/link.txt --verbose=1
+        "C:/Program Files/ti/msp430-GCC/bin/msp430-elf-ar.exe" qc libcmTC_17e71.a CMakeFiles/cmTC_17e71.dir/CMakeCCompilerABI.c.obj
+        "C:/Program Files/ti/msp430-GCC/bin/msp430-elf-ranlib.exe" libcmTC_17e71.a
+        make[1]: Leaving directory '/c/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles/CMakeScratch/TryCompile-fbfx3x'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Program Files/ti/msp430-GCC/include]
+          add: [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/include]
+          add: [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/include-fixed]
+          add: [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include]
+        end of search list found
+        collapse include dir [C:/Program Files/ti/msp430-GCC/include] ==> [C:/Program Files/ti/msp430-GCC/include]
+        collapse include dir [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/include] ==> [C:/Program Files/ti/msp430-GCC/lib/gcc/msp430-elf/9.3.1/include]
+        collapse include dir [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/include-fixed] ==> [C:/Program Files/ti/msp430-GCC/lib/gcc/msp430-elf/9.3.1/include-fixed]
+        collapse include dir [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include] ==> [C:/Program Files/ti/msp430-GCC/msp430-elf/include]
+        implicit include dirs: [C:/Program Files/ti/msp430-GCC/include;C:/Program Files/ti/msp430-GCC/lib/gcc/msp430-elf/9.3.1/include;C:/Program Files/ti/msp430-GCC/lib/gcc/msp430-elf/9.3.1/include-fixed;C:/Program Files/ti/msp430-GCC/msp430-elf/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles/CMakeScratch/TryCompile-fbfx3x']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/PROGRA~1/MSYS2/usr/bin/make.exe -f Makefile cmTC_17e71/fast]
+        ignore line: [/c/PROGRA~1/MSYS2/usr/bin/make  -f CMakeFiles/cmTC_17e71.dir/build.make CMakeFiles/cmTC_17e71.dir/build]
+        ignore line: [make[1]: Entering directory '/c/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles/CMakeScratch/TryCompile-fbfx3x']
+        ignore line: [Building C object CMakeFiles/cmTC_17e71.dir/CMakeCCompilerABI.c.obj]
+        ignore line: ["C:/Program Files/ti/msp430-GCC/bin/msp430-elf-gcc.exe"   -mmcu=msp430fr6989 -I"C:\\Program Files\\ti\\msp430-GCC\\include" -L"C:\\Program Files\\ti\\msp430-GCC\\include"    -v -o CMakeFiles/cmTC_17e71.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCCompilerABI.c"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Program Files\\ti\\msp430-GCC\\bin\\msp430-elf-gcc.exe]
+        ignore line: [Target: msp430-elf]
+        ignore line: [Configured with: ../../gcc/configure --target=msp430-elf --enable-languages=c c++ --disable-nls --enable-initfini-array --build=x86_64-pc-linux-gnu --host=i686-w64-mingw32 --enable-target-optspace --enable-newlib-nano-formatted-io --with-pkgversion='Mitto Systems Limited - msp430-gcc 9.3.1.11']
+        ignore line: [Thread model: single]
+        ignore line: [gcc version 9.3.1 (Mitto Systems Limited - msp430-gcc 9.3.1.11) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mmcu=msp430fr6989' '-I' 'C:\\Program Files\\ti\\msp430-GCC\\include' '-LC:\\Program Files\\ti\\msp430-GCC\\include' '-v' '-o' 'CMakeFiles/cmTC_17e71.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=msp430xv2']
+        ignore line: [ c:/program files/ti/msp430-gcc/bin/../libexec/gcc/msp430-elf/9.3.1/cc1.exe -quiet -v -I C:\\Program Files\\ti\\msp430-GCC\\include -iprefix c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/ C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mmcu=msp430fr6989 -mcpu=msp430xv2 -auxbase-strip CMakeFiles/cmTC_17e71.dir/CMakeCCompilerABI.c.obj -version -o C:\\Users\\blake\\AppData\\Local\\Temp\\cckPYfWW.s]
+        ignore line: [GNU C17 (Mitto Systems Limited - msp430-gcc 9.3.1.11) version 9.3.1 (msp430-elf)]
+        ignore line: [	compiled by GNU C version 4.9.3 20150626 (Fedora MinGW 4.9.3-1.el7)  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/sys-include"]
+        ignore line: [ignoring duplicate directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/include"]
+        ignore line: [ignoring duplicate directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/include-fixed"]
+        ignore line: [ignoring nonexistent directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/sys-include"]
+        ignore line: [ignoring duplicate directory "c:/program files/ti/msp430-gcc/lib/gcc/../../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:\\Program Files\\ti\\msp430-GCC\\include]
+        ignore line: [ c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/include]
+        ignore line: [ c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/include-fixed]
+        ignore line: [ c:\\program files\\ti\\msp430-gcc\\bin\\../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Mitto Systems Limited - msp430-gcc 9.3.1.11) version 9.3.1 (msp430-elf)]
+        ignore line: [	compiled by GNU C version 4.9.3 20150626 (Fedora MinGW 4.9.3-1.el7)  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: b4644dc5df0be7dc32c943c41af9774c]
+        ignore line: [COLLECT_GCC_OPTIONS='-mmcu=msp430fr6989' '-I' 'C:\\Program Files\\ti\\msp430-GCC\\include' '-LC:\\Program Files\\ti\\msp430-GCC\\include' '-v' '-o' 'CMakeFiles/cmTC_17e71.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=msp430xv2']
+        ignore line: [ c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/bin/as.exe --traditional-format -mP -mcpu=msp430xv2 -o CMakeFiles/cmTC_17e71.dir/CMakeCCompilerABI.c.obj C:\\Users\\blake\\AppData\\Local\\Temp\\cckPYfWW.s]
+        ignore line: [COMPILER_PATH=c:/program files/ti/msp430-gcc/bin/../libexec/gcc/msp430-elf/9.3.1/]
+        ignore line: [c:/program files/ti/msp430-gcc/bin/../libexec/gcc/]
+        ignore line: [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/bin/]
+        ignore line: [LIBRARY_PATH=c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/]
+        ignore line: [c:/program files/ti/msp430-gcc/bin/../lib/gcc/]
+        ignore line: [c:/program files/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/9.3.1/../../../../msp430-elf/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mmcu=msp430fr6989' '-I' 'C:\\Program Files\\ti\\msp430-GCC\\include' '-LC:\\Program Files\\ti\\msp430-GCC\\include' '-v' '-o' 'CMakeFiles/cmTC_17e71.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=msp430xv2']
+        ignore line: [Linking C static library libcmTC_17e71.a]
+        ignore line: ["C:/Program Files/CMake/bin/cmake.exe" -P CMakeFiles/cmTC_17e71.dir/cmake_clean_target.cmake]
+        ignore line: ["C:/Program Files/CMake/bin/cmake.exe" -E cmake_link_script CMakeFiles/cmTC_17e71.dir/link.txt --verbose=1]
+        ignore line: ["C:/Program Files/ti/msp430-GCC/bin/msp430-elf-ar.exe" qc libcmTC_17e71.a CMakeFiles/cmTC_17e71.dir/CMakeCCompilerABI.c.obj]
+        ignore line: ["C:/Program Files/ti/msp430-GCC/bin/msp430-elf-ranlib.exe" libcmTC_17e71.a]
+        ignore line: [make[1]: Leaving directory '/c/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles/CMakeScratch/TryCompile-fbfx3x']
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+...

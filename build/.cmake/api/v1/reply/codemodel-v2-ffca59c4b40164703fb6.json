@@ -1,0 +1,114 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.0.2"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "combatRobot",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"jsonFile" : "directory-combatRobot-Debug-271a7761ef83ff72f7dd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.0.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "combatRobot"
+				},
+				{
+					"build" : "combatRobot/coreRobot",
+					"jsonFile" : "directory-combatRobot.coreRobot-Debug-9d785fdd89fa5d58bc41.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.0.2"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "combatRobot/coreRobot",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "combatRobot/remoteController",
+					"jsonFile" : "directory-combatRobot.remoteController-Debug-ecee6e5734a0695d0112.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.0.2"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "combatRobot/remoteController"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "CombatRobot",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "CoreRobot::@1282256927556db61424",
+					"jsonFile" : "target-CoreRobot-Debug-c70e5c835e06fbfdd398.json",
+					"name" : "CoreRobot",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "CoreRobotHex::@1282256927556db61424",
+					"jsonFile" : "target-CoreRobotHex-Debug-369384c8540d1433a945.json",
+					"name" : "CoreRobotHex",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build",
+		"source" : "C:/Users/blake/School/Robotics Project Lab/Combat Robot"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

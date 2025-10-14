@@ -1,0 +1,32 @@
+[
+{
+  "directory": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/combatRobot/coreRobot",
+  "command": "\"C:/Program Files/ti/msp430-GCC/bin/msp430-elf-g++.exe\"  -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot/header\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot/source\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/header\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source\" -mmcu=msp430fr6989 -I\"C:\\Program Files\\ti\\msp430-GCC\\include\" -L\"C:\\Program Files\\ti\\msp430-GCC\\include\" -g -std=c++2a -o CMakeFiles/CoreRobot.dir/main.cpp.obj -c \"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot/main.cpp\"",
+  "file": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot/main.cpp",
+  "output": "combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/combatRobot/coreRobot",
+  "command": "\"C:/Program Files/ti/msp430-GCC/bin/msp430-elf-g++.exe\"  -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot/header\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot/source\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/header\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source\" -mmcu=msp430fr6989 -I\"C:\\Program Files\\ti\\msp430-GCC\\include\" -L\"C:\\Program Files\\ti\\msp430-GCC\\include\" -g -std=c++2a -o CMakeFiles/CoreRobot.dir/source/robot.cpp.obj -c \"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot/source/robot.cpp\"",
+  "file": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot/source/robot.cpp",
+  "output": "combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/source/robot.cpp.obj"
+},
+{
+  "directory": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/combatRobot/coreRobot",
+  "command": "\"C:/Program Files/ti/msp430-GCC/bin/msp430-elf-g++.exe\"  -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot/header\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot/source\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/header\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source\" -mmcu=msp430fr6989 -I\"C:\\Program Files\\ti\\msp430-GCC\\include\" -L\"C:\\Program Files\\ti\\msp430-GCC\\include\" -g -std=c++2a -o CMakeFiles/CoreRobot.dir/__/source/device.cpp.obj -c \"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source/device.cpp\"",
+  "file": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source/device.cpp",
+  "output": "combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/__/source/device.cpp.obj"
+},
+{
+  "directory": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/combatRobot/coreRobot",
+  "command": "\"C:/Program Files/ti/msp430-GCC/bin/msp430-elf-g++.exe\"  -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot/header\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot/source\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/header\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source\" -mmcu=msp430fr6989 -I\"C:\\Program Files\\ti\\msp430-GCC\\include\" -L\"C:\\Program Files\\ti\\msp430-GCC\\include\" -g -std=c++2a -o CMakeFiles/CoreRobot.dir/__/source/pins.cpp.obj -c \"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source/pins.cpp\"",
+  "file": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source/pins.cpp",
+  "output": "combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/__/source/pins.cpp.obj"
+},
+{
+  "directory": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/combatRobot/coreRobot",
+  "command": "\"C:/Program Files/ti/msp430-GCC/bin/msp430-elf-g++.exe\"  -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot/header\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot/source\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/header\" -I\"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source\" -mmcu=msp430fr6989 -I\"C:\\Program Files\\ti\\msp430-GCC\\include\" -L\"C:\\Program Files\\ti\\msp430-GCC\\include\" -g -std=c++2a -o CMakeFiles/CoreRobot.dir/__/source/motors.cpp.obj -c \"C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source/motors.cpp\"",
+  "file": "C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source/motors.cpp",
+  "output": "combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/__/source/motors.cpp.obj"
+}
+]

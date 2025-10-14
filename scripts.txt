@@ -1,0 +1,7 @@
+msp430-elf-gcc "C:\Users\blake\School\Robotics Project Lab\Combat Robot\blink.c" -o "C:\Users\blake\School\Robotics Project Lab\Combat Robot\blink.elf" -I"C:\Program Files\ti\msp430-GCC\include" -mmcu=msp430fr6989 -L"C:\Program Files\ti\msp430-GCC\include"
+
+msp430-elf-objcopy -O ihex "C:\Users\blake\School\Robotics Project Lab\Combat Robot\blink.elf" "C:\Users\blake\School\Robotics Project Lab\Combat Robot\blink.hex"
+
+MSP430Flasher -w"C:\Users\blake\School\Robotics Project Lab\Combat Robot\blink.hex"
+
+msp430-elf-gcc -I"C:/Users/blake/School/Robotics Project Lab/Combat Robot" -mmcu=msp430fr6989 -g -std=c++11 -o CMakeFiles/CombatRobot.dir/setHigh.cpp.obj -c "C:/Users/blake/School/Robotics Project Lab/Combat Robot/setHigh.cpp"

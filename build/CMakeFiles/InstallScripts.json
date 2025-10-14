@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/cmake_install.cmake",
+		"C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/combatRobot/cmake_install.cmake",
+		"C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/combatRobot/coreRobot/cmake_install.cmake",
+		"C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/combatRobot/remoteController/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -2,18 +2,20 @@
 
 #include "combatRobot.hpp" // Project header file
 
-namespace msp430{ // #namespace: msp430
+namespace combatRobot::device{ // #namespace: device
 
     // #class: Device
     class Device{
     public:
     // Public Methods
         void run();
+    // Public Static Methods
+        static void delay(const std::uint16_t p_milliseconds);
+        static void raiseError();
     private:
     // Private Methods
         void stopWDT();
         void enableGPIO();
-        void delay(std::uint16_t p_milliseconds);
     }; // #end: Device
 
-} // #end: msp430
+} // #end: device

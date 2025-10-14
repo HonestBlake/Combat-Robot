@@ -2,12 +2,13 @@
 
 #include "combatRobot.hpp" // Project header file
 
-namespace msp430{ // #scope: msp430
+namespace combatRobot::pins{ // #scope: pins
 
     // #enum: Mode, Enum Class
-    enum class Mode: bool{ 
-        OUTPUT = 1, 
-        INPUT = 0 
+    enum class Mode: std::uint8_t{ 
+        OUTPUT, 
+        INPUT,
+        PWM
     }; // #end: Mode
 
     // #enum: State, Enum Class
@@ -37,14 +38,21 @@ namespace msp430{ // #scope: msp430
         Pin(const Port p_pin);
         Pin(const Port p_pin, const Mode p_mode);
         Pin(const Port p_pin, const Mode p_mode, const State p_state);
+        Pin(const Port p_port, const Mode p_mode, const std::uint16_t p_frequency, const std::uint8_t p_dutyCycle);
     // Public Methods
         Pin& write(const State p_state);
         Pin& toggle();
         Pin& set(const Mode p_mode);
+        void frequency(std::uint16_t p_frequency);
+        void dutyCycle(std::uint8_t p_dutyCycle);
+        void start();
+        void stop();
     private:
     // Private Static Methods
-        static volatile unsigned char& getDirectionRegister(const Port p_port);
-        static volatile unsigned char& getOutputRegister(const Port p_port);
+        static volatile std::uint8_t& getDirectionRegister(const Port p_port);
+        static volatile std::uint8_t& getOutputRegister(const Port p_port);
+        static volatile std::uint8_t& getSelect0Register(const Port p_port);
+        static volatile std::uint8_t& getSelect1Register(const Port p_port);
         static bool isPort1(const Port p_port);
         static bool isPort2(const Port p_port);
         static bool isPort3(const Port p_port);
@@ -66,8 +74,13 @@ namespace msp430{ // #scope: msp430
         static std::uint8_t getPort9BitMask(const Port p_port);
         static std::uint8_t getPort10BitMask(const Port p_port);
         static std::uint8_t getBitMask(const Port p_port); 
+        static std::uint16_t getTimerClearBitMask(Port p_port);
+    // Private Methods
+        void configureTimer();
     // Private Members
         Port m_port;
+        std::uint16_t m_frequency;
+        std::uint8_t m_dutyCycle;
     }; // #end: Pin
- 
-} // #end: msp430
+
+} // #end: pins

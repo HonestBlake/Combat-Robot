@@ -2,11 +2,10 @@
 
 #include "combatRobot.hpp" // Project header file
 #include "pins.hpp" // For Pin class
-#include "pwm.hpp" // For PWM class
 
-namespace msp430{ // #scope: msp430
+namespace combatRobot::motors{ // #scope: motors
 
-    constexpr std::uint16_t MOTOR_PWM_FREQUENCY = 1000; // Hz
+    constexpr std::uint16_t MOTOR_PWM_FREQUENCY = 1'000; // Hz
     constexpr State IN1_MOTOR_FORWARD_STATE = State::HIGH; // IN1 pin state for forward direction
     constexpr State IN2_MOTOR_FORWARD_STATE = static_cast<State>(!static_cast<bool>(IN1_MOTOR_FORWARD_STATE)); // IN2 pin state for forward direction
     constexpr State IN1_MOTOR_REVERSE_STATE = static_cast<State>(!static_cast<bool>(IN1_MOTOR_FORWARD_STATE)); // IN1 pin state for reverse direction
@@ -21,11 +20,8 @@ namespace msp430{ // #scope: msp430
         void drive(std::int8_t p_speed); // Speed range: -100 to 100
         void stop();
     private:
-    // Private Methods
-        std::uint8_t mapSpeedToDutyCycle(std::int8_t p_speed);
     // Private Members
-        Pin m_in1, m_in2, m_enable; // Motor control pins 
-        PWM m_pwm; // PWM controller
+        Pin m_in1, m_in2, m_signal; // Motor control pins 
     }; // #end: Motor
 
-} // #end: msp430
+} // #end: motors

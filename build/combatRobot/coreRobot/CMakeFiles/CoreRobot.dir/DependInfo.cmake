@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source/device.cpp" "combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/__/source/device.cpp.obj" "gcc" "combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/__/source/device.cpp.obj.d"
+  "C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source/ir.cpp" "combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/__/source/ir.cpp.obj" "gcc" "combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/__/source/ir.cpp.obj.d"
   "C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source/motors.cpp" "combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/__/source/motors.cpp.obj" "gcc" "combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/__/source/motors.cpp.obj.d"
   "C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/source/pins.cpp" "combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/__/source/pins.cpp.obj" "gcc" "combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/__/source/pins.cpp.obj.d"
   "C:/Users/blake/School/Robotics Project Lab/Combat Robot/combatRobot/coreRobot/main.cpp" "combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/main.cpp.obj" "gcc" "combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/main.cpp.obj.d"

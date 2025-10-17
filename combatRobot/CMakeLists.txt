@@ -5,6 +5,7 @@ set(SOURCE_FILES
     "${COMBAT_ROBOT}/source/device.cpp"
     "${COMBAT_ROBOT}/source/pins.cpp"
     "${COMBAT_ROBOT}/source/motors.cpp"
+    "${COMBAT_ROBOT}/source/ir.cpp"
 )
 set(INCLUDE_DIR
     ${COMBAT_ROBOT}

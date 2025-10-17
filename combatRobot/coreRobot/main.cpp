@@ -24,10 +24,18 @@ int main(){
 void combatRobot::Device::run(){
     stopWDT(); // Stop watchdog timer
     enableGPIO(); // Disable GPIO high-impedance mode
-    Pin led = Pin(Port::P9_7, Mode::OUTPUT, State::LOW);
+    Pin<Mode::OUTPUT> led = Pin<Mode::OUTPUT>(Port::P9_7, State::LOW);
 
     Motor leftMotor = Motor(Port::P3_7, Port::P2_2, Port::P2_6);
     Motor rightMotor = Motor(Port::P1_5, Port::P9_4, Port::P2_7);
+
+    //                    V In 1        V In 2       V Signl
+    Motor motor1 = Motor(Port::P3_7, Port::P2_2, Port::P2_6);
+    motor1.drive(50); // Drive forward at speed 0-100
+    motor1.drive(-50); // Drive reverse at speed -100 to 0
+    motor1.stop(); // Stop the motor
+
+
     
     while(true){
 

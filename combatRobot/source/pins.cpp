@@ -1,190 +1,12 @@
 #include "pins.hpp" // Module header file
+#include "combatRobot.hpp"
 #include "device.hpp"
 
 namespace combatRobot::pins{ // #scope: pins
 
-// Public Factory Methods
+// #scope: port
 
-    Pin::Pin(const Port p_port){
-        m_port = p_port;
-    }
-
-    Pin::Pin(const Port p_port, const Mode p_mode){
-        m_port = p_port;
-        set(p_mode);
-    }
-
-    Pin::Pin(const Port p_port, const Mode p_mode, const State p_state){
-        m_port = p_port;
-        set(p_mode);
-        write(p_state);
-    }
-
-    Pin::Pin(const Port p_port, const Mode p_mode, const std::uint16_t p_frequency, const std::uint8_t p_dutyCycle){
-        if(p_mode != Mode::PWM){
-            Device::raiseError();
-        }
-        m_port = p_port;
-        set(p_mode);
-        m_port = p_port;
-        if(p_frequency == 0){
-            m_frequency = 1; // Minimum frequency is 1 Hz
-        }else{
-            m_frequency = p_frequency;
-        }
-        if(p_dutyCycle > 100){
-            m_dutyCycle = 100; // Cap at 100%
-        }else{
-            m_dutyCycle = p_dutyCycle;
-        }
-        start();
-    }
-
-// Public Methods
-
-    Pin& Pin::write(const State p_state){
-        if(p_state == State::HIGH){
-            getOutputRegister(m_port) |= getBitMask(m_port);
-        }else if(p_state == State::LOW){
-            getOutputRegister(m_port) &= ~getBitMask(m_port);
-        }
-        return *this;
-    }
-
-    Pin& Pin::toggle(){
-        getOutputRegister(m_port) ^= getBitMask(m_port);
-        return *this;
-    }
-
-    Pin& Pin::set(const Mode p_mode){
-        switch(p_mode){
-            case Mode::OUTPUT: {
-                getDirectionRegister(m_port) |= getBitMask(m_port); // Set as output
-                break;
-            }case Mode::INPUT: {
-                getDirectionRegister(m_port) &= ~getBitMask(m_port); // Set as input
-                break;
-            }case Mode::PWM: {
-                getDirectionRegister(m_port) |= getBitMask(m_port); // Set as output for PWM
-                getSelect0Register(m_port) |= getBitMask(m_port); // Set function select 0 to 1
-                getSelect1Register(m_port) &= ~getBitMask(m_port); // Set function select 1 to 0
-                break;
-            }default: { 
-                Device::raiseError();
-            }
-        }
-        return *this;
-    }
-
-    void Pin::frequency(std::uint16_t p_frequency){
-        if(p_frequency == 0){
-            m_frequency = 1; // Minimum frequency is 1 Hz
-        }else{
-            m_frequency = p_frequency;
-        }
-        std::uint16_t periodTicks = SMCLK / m_frequency; // Assuming SMCLK is 1MHz
-        switch(m_port){
-            case Port::P2_1: {
-                TB0CCR0 = periodTicks - 1; // Set period
-                break;
-            }case Port::P2_7: {
-                TB0CCR0 = periodTicks - 1; // Set period
-                break;
-            }case Port::P2_6: {
-                TB0CCR0 = periodTicks - 1; // Set period
-                break;
-            }case Port::P3_3: {
-                TA1CCR0 = periodTicks - 1; // Set period
-                break;
-            }case Port::P3_6: {
-                TB0CCR0 = periodTicks - 1; // Set period
-                break;
-            }default: {
-                Device::raiseError();
-            }
-        }
-    }
-
-    void Pin::dutyCycle(std::uint8_t p_dutyCycle){
-        if(p_dutyCycle > 100){
-            m_dutyCycle = 100; // Cap at 100%
-        }else{
-            m_dutyCycle = p_dutyCycle;
-        }
-        std::uint32_t periodTicks = SMCLK / m_frequency; // Assuming SMCLK is 1MHz
-        std::uint32_t dutyTicks = (periodTicks * m_dutyCycle) / 100; // Duty cycle in ticks
-        switch(m_port){
-            case Port::P2_1: {
-                TB0CCR1 = dutyTicks; // Set duty cycle
-                break;
-            }case Port::P2_7: {
-                TB0CCR6 = dutyTicks; // Set duty cycle
-                break;
-            }case Port::P2_6: {
-                TB0CCR5 = dutyTicks; // Set duty cycle
-                break;
-            }case Port::P3_3: {
-                TA1CCR1 = dutyTicks; // Set duty cycle
-                break;
-            }case Port::P3_6: {
-                TB0CCR2 = dutyTicks; // Set duty cycle
-                break;
-            }default: {
-                Device::raiseError();
-            }
-        }
-    }
-
-    void Pin::start(){
-        configureTimer();
-        switch(m_port){
-            case Port::P2_1: {
-                TB0CTL = TASSEL__SMCLK | MC__UP | getTimerClearBitMask(m_port);
-                break;
-            }case Port::P2_7: {
-                TB0CTL = TASSEL__SMCLK | MC__UP | getTimerClearBitMask(m_port);
-                break;
-            }case Port::P2_6: {
-                TB0CTL = TASSEL__SMCLK | MC__UP | getTimerClearBitMask(m_port);
-                break;
-            }case Port::P3_3: {
-                TA1CTL = TASSEL__SMCLK | MC__UP | getTimerClearBitMask(m_port);
-                break;
-            }case Port::P3_6: {
-                TB0CTL = TASSEL__SMCLK | MC__UP | getTimerClearBitMask(m_port);
-                break;
-            }default: {
-                Device::raiseError();
-            }
-        }
-    }
-
-    void Pin::stop(){
-        switch(m_port){
-            case Port::P2_1: {
-                TB0CTL &= ~MC_3;
-                break;
-            }case Port::P2_7: {
-                TB0CTL &= ~MC_3;
-                break;
-            }case Port::P2_6: {
-                TB0CTL &= ~MC_3;
-                break;
-            }case Port::P3_3: {
-                TA1CTL &= ~MC_3;
-                break;
-            }case Port::P3_6: {
-                TB0CTL &= ~MC_3;
-                break;
-            }default: {
-                Device::raiseError();
-            }
-        }
-    }
-
-// Private Static Methods
-
-    volatile std::uint8_t& Pin::getDirectionRegister(const Port p_port){
+    volatile std::uint8_t& port::getDirectionRegister(const Port p_port){
         if(isPort1(p_port)){
             return P1DIR;
         }else if(isPort2(p_port)){
@@ -211,7 +33,7 @@ namespace combatRobot::pins{ // #scope: pins
         }
     }
 
-    volatile std::uint8_t& Pin::getOutputRegister(const Port p_port){
+    volatile std::uint8_t& port::getOutputRegister(const Port p_port){
         if(isPort1(p_port)){
             return P1OUT;
         }else if(isPort2(p_port)){
@@ -238,7 +60,7 @@ namespace combatRobot::pins{ // #scope: pins
         return P1OUT; // Never reached
     }
 
-    volatile std::uint8_t& Pin::getSelect0Register(const Port p_port){
+    volatile std::uint8_t& port::getSelect0Register(const Port p_port){
         if(isPort1(p_port)){
             return P1SEL0;
         }else if(isPort2(p_port)){
@@ -265,7 +87,7 @@ namespace combatRobot::pins{ // #scope: pins
         return P1SEL0; // Never reached
     }
 
-    volatile std::uint8_t& Pin::getSelect1Register(const Port p_port){
+    volatile std::uint8_t& port::getSelect1Register(const Port p_port){
         if(isPort1(p_port)){
             return P1SEL1;
         }else if(isPort2(p_port)){
@@ -292,47 +114,47 @@ namespace combatRobot::pins{ // #scope: pins
         return P1SEL1; // Never reached
     }
 
-    bool Pin::isPort1(const Port p_port){
+    bool port::isPort1(const Port p_port){
         return (p_port >= Port::P1_0 && p_port <= Port::P1_7);
     }
 
-    bool Pin::isPort2(const Port p_port){
+    bool port::isPort2(const Port p_port){
         return (p_port >= Port::P2_0 && p_port <= Port::P2_7);
     }
 
-    bool Pin::isPort3(const Port p_port){
+    bool port::isPort3(const Port p_port){
         return (p_port >= Port::P3_0 && p_port <= Port::P3_7);
     }
 
-    bool Pin::isPort4(const Port p_port){
+    bool port::isPort4(const Port p_port){
         return (p_port >= Port::P4_0 && p_port <= Port::P4_7);
     }
 
-    bool Pin::isPort5(const Port p_port){
+    bool port::isPort5(const Port p_port){
         return (p_port >= Port::P5_0 && p_port <= Port::P5_7);
     }
 
-    bool Pin::isPort6(const Port p_port){
+    bool port::isPort6(const Port p_port){
         return (p_port >= Port::P6_0 && p_port <= Port::P6_7);
     }
 
-    bool Pin::isPort7(const Port p_port){
+    bool port::isPort7(const Port p_port){
         return (p_port >= Port::P7_0 && p_port <= Port::P7_7);
     }
 
-    bool Pin::isPort8(const Port p_port){
+    bool port::isPort8(const Port p_port){
         return (p_port >= Port::P8_0 && p_port <= Port::P8_7);
     }
 
-    bool Pin::isPort9(const Port p_port){
+    bool port::isPort9(const Port p_port){
         return (p_port >= Port::P9_0 && p_port <= Port::P9_7);
     }
 
-    bool Pin::isPort10(const Port p_port){
+    bool port::isPort10(const Port p_port){
         return (p_port >= Port::P10_0 && p_port <= Port::P10_7);
     }
 
-    std::uint8_t Pin::getPort1BitMask(const Port p_port){
+    std::uint8_t port::getPort1BitMask(const Port p_port){
         switch(p_port){
             case Port::P1_0: return BIT0;
             case Port::P1_1: return BIT1;
@@ -349,7 +171,7 @@ namespace combatRobot::pins{ // #scope: pins
         return 0; // Never reached
     }
 
-    std::uint8_t Pin::getPort2BitMask(const Port p_port){
+    std::uint8_t port::getPort2BitMask(const Port p_port){
         switch(p_port){
             case Port::P2_0: return BIT0;
             case Port::P2_1: return BIT1;
@@ -366,7 +188,7 @@ namespace combatRobot::pins{ // #scope: pins
         return 0; // Never reached
     }
 
-    std::uint8_t Pin::getPort3BitMask(const Port p_port){
+    std::uint8_t port::getPort3BitMask(const Port p_port){
         switch(p_port){
             case Port::P3_0: return BIT0;
             case Port::P3_1: return BIT1;
@@ -383,7 +205,7 @@ namespace combatRobot::pins{ // #scope: pins
         return 0; // Never reached
     }
 
-    std::uint8_t Pin::getPort4BitMask(const Port p_port){
+    std::uint8_t port::getPort4BitMask(const Port p_port){
         switch(p_port){
             case Port::P4_0: return BIT0;
             case Port::P4_1: return BIT1;
@@ -400,7 +222,7 @@ namespace combatRobot::pins{ // #scope: pins
         return 0; // Never reached
     }
 
-    std::uint8_t Pin::getPort5BitMask(const Port p_port){
+    std::uint8_t port::getPort5BitMask(const Port p_port){
         switch(p_port){
             case Port::P5_0: return BIT0;
             case Port::P5_1: return BIT1;
@@ -417,7 +239,7 @@ namespace combatRobot::pins{ // #scope: pins
         return 0; // Never reached
     }
 
-    std::uint8_t Pin::getPort6BitMask(const Port p_port){
+    std::uint8_t port::getPort6BitMask(const Port p_port){
         switch(p_port){
             case Port::P6_0: return BIT0;
             case Port::P6_1: return BIT1;
@@ -434,7 +256,7 @@ namespace combatRobot::pins{ // #scope: pins
         return 0; // Never reached
     }
 
-    std::uint8_t Pin::getPort7BitMask(const Port p_port){
+    std::uint8_t port::getPort7BitMask(const Port p_port){
         switch(p_port){
             case Port::P7_0: return BIT0;
             case Port::P7_1: return BIT1;
@@ -451,7 +273,7 @@ namespace combatRobot::pins{ // #scope: pins
         return 0; // Never reached
     }
 
-    std::uint8_t Pin::getPort8BitMask(const Port p_port){
+    std::uint8_t port::getPort8BitMask(const Port p_port){
         switch(p_port){
             case Port::P8_0: return BIT0;
             case Port::P8_1: return BIT1;
@@ -468,7 +290,7 @@ namespace combatRobot::pins{ // #scope: pins
         return 0; // Never reached
     }
 
-    std::uint8_t Pin::getPort9BitMask(const Port p_port){
+    std::uint8_t port::getPort9BitMask(const Port p_port){
         switch(p_port){
             case Port::P9_0: return BIT0;
             case Port::P9_1: return BIT1;
@@ -485,7 +307,7 @@ namespace combatRobot::pins{ // #scope: pins
         return 0; // Never reached
     }
 
-    std::uint8_t Pin::getPort10BitMask(const Port p_port){
+    std::uint8_t port::getPort10BitMask(const Port p_port){
         switch(p_port){
             case Port::P10_0: return BIT0;
             case Port::P10_1: return BIT1;
@@ -502,7 +324,7 @@ namespace combatRobot::pins{ // #scope: pins
         return 0; // Never reached
     }
 
-    std::uint8_t Pin::getBitMask(const Port p_port){
+    std::uint8_t port::getBitMask(const Port p_port){
         if(isPort1(p_port)){
             return getPort1BitMask(p_port);
         }else if(isPort2(p_port)){
@@ -529,7 +351,7 @@ namespace combatRobot::pins{ // #scope: pins
         return 0; // Never reached
     }
 
-    std::uint16_t Pin::getTimerClearBitMask(Port p_port){
+    std::uint16_t port::getTimerClearBitMask(Port p_port){
         switch(p_port){
             case Port::P2_1: return TBCLR;
             case Port::P2_7: return TBCLR;
@@ -543,11 +365,223 @@ namespace combatRobot::pins{ // #scope: pins
         return 0; // Never reached
     }
 
+// #scope: Pin<Mode::OUTPUT>
+
+// Public Factory Methods
+
+    Pin<Mode::OUTPUT>::Pin(const Port p_port): m_port(p_port){
+        setOutput(p_port);
+    }
+
+    Pin<Mode::OUTPUT>::Pin(const Port p_port, const State p_state): m_port(p_port){
+        setOutput(p_port);
+        write(p_state);
+    }
+
+// Public Methods
+
+    Pin<Mode::OUTPUT>& Pin<Mode::OUTPUT>::write(const State p_state){
+        if(p_state == State::HIGH){
+            port::getOutputRegister(m_port) |= port::getBitMask(m_port);
+        }else if(p_state == State::LOW){
+            port::getOutputRegister(m_port) &= ~port::getBitMask(m_port);
+        }
+        return *this;
+    }
+
+    Pin<Mode::OUTPUT>& Pin<Mode::OUTPUT>::toggle(){
+        port::getOutputRegister(m_port) ^= port::getBitMask(m_port);
+        return *this;
+    }
+
+    const Pin<Mode::OUTPUT>& Pin<Mode::OUTPUT>::write(const State p_state)const{
+        if(p_state == State::HIGH){
+            port::getOutputRegister(m_port) |= port::getBitMask(m_port);
+        }else if(p_state == State::LOW){
+            port::getOutputRegister(m_port) &= ~port::getBitMask(m_port);
+        }
+        return *this;
+    }
+
+   const Pin<Mode::OUTPUT>& Pin<Mode::OUTPUT>::toggle()const{
+        port::getOutputRegister(m_port) ^= port::getBitMask(m_port);
+        return *this;
+    }
+
+// Private Static Methods
+
+    void Pin<Mode::OUTPUT>::setOutput(const Port p_port){
+        port::getDirectionRegister(p_port) |= port::getBitMask(p_port);
+    }
+
+// #scope: Pin<Mode::PWM>
+
+// Public Factory Methods
+
+    Pin<Mode::PWM>::Pin(const Port p_port): m_port(p_port){
+        setPWM(p_port);
+    }
+
+    Pin<Mode::PWM>::Pin(const Port p_port, const std::uint32_t p_frequency): m_port(p_port), m_frequency(p_frequency){
+        setPWM(p_port);
+        frequency(p_frequency);
+    }
+
+    Pin<Mode::PWM>::Pin(const Port p_port, const std::uint32_t p_frequency, const std::uint8_t p_dutyCycle): m_port(p_port), m_frequency(p_frequency), m_dutyCycle(p_dutyCycle){
+        setPWM(p_port);
+        frequency(p_frequency);
+        dutyCycle(p_dutyCycle);
+    }
+
+// Public Methods
+
+    Pin<Mode::PWM>& Pin<Mode::PWM>::frequency(const std::uint32_t p_frequency){
+        if(!m_isRunning){
+            return setFrequency(p_frequency); // Just change frequency if not running
+        }
+        setFrequency(p_frequency);
+        std::uint16_t periodTicks = SMCLK / m_frequency; // Assuming SMCLK is 1MHz
+        switch(m_port){
+            case Port::P2_1: {
+                TB0CCR0 = periodTicks - 1; // Set period
+                break;
+            }case Port::P2_7: {
+                TB0CCR0 = periodTicks - 1; // Set period
+                break;
+            }case Port::P2_6: {
+                TB0CCR0 = periodTicks - 1; // Set period
+                break;
+            }case Port::P3_3: {
+                TA1CCR0 = periodTicks - 1; // Set period
+                break;
+            }case Port::P3_6: {
+                TB0CCR0 = periodTicks - 1; // Set period
+                break;
+            }default: {
+                Device::raiseError();
+            }
+        }
+        return *this;
+    }
+
+    Pin<Mode::PWM>& Pin<Mode::PWM>::dutyCycle(const std::uint8_t p_dutyCycle){
+        if(!m_isRunning){
+            return setDutyCycle(p_dutyCycle); // Just change duty cycle if not running
+        }
+        setDutyCycle(p_dutyCycle);
+        std::uint32_t periodTicks = SMCLK / m_frequency; // Assuming SMCLK is 1MHz
+        std::uint32_t dutyTicks = (periodTicks * m_dutyCycle) / 100; // Duty cycle in ticks
+        switch(m_port){
+            case Port::P2_1: {
+                TB0CCR1 = dutyTicks; // Set duty cycle
+                break;
+            }case Port::P2_7: {
+                TB0CCR6 = dutyTicks; // Set duty cycle
+                break;
+            }case Port::P2_6: {
+                TB0CCR5 = dutyTicks; // Set duty cycle
+                break;
+            }case Port::P3_3: {
+                TA1CCR1 = dutyTicks; // Set duty cycle
+                break;
+            }case Port::P3_6: {
+                TB0CCR2 = dutyTicks; // Set duty cycle
+                break;
+            }default: {
+                Device::raiseError();
+            }
+        }
+        return *this;
+    }
+
+    Pin<Mode::PWM>& Pin<Mode::PWM>::start(){
+        if(m_isRunning){
+            return *this; // Already running
+        }
+        m_isRunning = true;
+        configureTimer();
+        switch(m_port){
+            case Port::P2_1: {
+                TB0CTL = TASSEL__SMCLK | MC__UP | port::getTimerClearBitMask(m_port);
+                break;
+            }case Port::P2_7: {
+                TB0CTL = TASSEL__SMCLK | MC__UP | port::getTimerClearBitMask(m_port);
+                break;
+            }case Port::P2_6: {
+                TB0CTL = TASSEL__SMCLK | MC__UP | port::getTimerClearBitMask(m_port);
+                break;
+            }case Port::P3_3: {
+                TA1CTL = TASSEL__SMCLK | MC__UP | port::getTimerClearBitMask(m_port);
+                break;
+            }case Port::P3_6: {
+                TB0CTL = TASSEL__SMCLK | MC__UP | port::getTimerClearBitMask(m_port);
+                break;
+            }default: {
+                Device::raiseError();
+            }
+        }
+        return *this;
+    }
+
+    Pin<Mode::PWM>& Pin<Mode::PWM>::stop(){
+        if(!m_isRunning){
+            return *this; // Already stopped
+        }
+        m_isRunning = false;
+        switch(m_port){
+            case Port::P2_1: {
+                TB0CTL &= ~MC_3;
+                break;
+            }case Port::P2_7: {
+                TB0CTL &= ~MC_3;
+                break;
+            }case Port::P2_6: {
+                TB0CTL &= ~MC_3;
+                break;
+            }case Port::P3_3: {
+                TA1CTL &= ~MC_3;
+                break;
+            }case Port::P3_6: {
+                TB0CTL &= ~MC_3;
+                break;
+            }default: {
+                Device::raiseError();
+            }
+        }
+        return *this;
+    }
+
+// Private Static Methods
+
+    void Pin<Mode::PWM>::setPWM(const Port p_port){
+        port::getDirectionRegister(p_port) |= port::getBitMask(p_port); // Set as output for PWM
+        port::getSelect0Register(p_port) |= port::getBitMask(p_port); // Set function select 0 to 1
+        port::getSelect1Register(p_port) &= ~port::getBitMask(p_port); // Set function select 1 to 0
+    }
+
 // Private methods
 
-    void Pin::configureTimer(){
-        std::uint16_t periodTicks = SMCLK / m_frequency; // Assuming SMCLK is 1MHz
-        std::uint16_t dutyTicks = (periodTicks * m_dutyCycle) / 100; // Duty cycle in ticks
+    Pin<Mode::PWM>& Pin<Mode::PWM>::setFrequency(const std::uint32_t p_frequency){
+        if(p_frequency < MIN_PWM_FREQUENCY){
+            m_frequency = MIN_PWM_FREQUENCY;
+        }else{
+            m_frequency = p_frequency;
+        }
+        return *this;
+    }
+
+    Pin<Mode::PWM>& Pin<Mode::PWM>::setDutyCycle(const std::uint8_t p_dutyCycle){
+        if(p_dutyCycle > MAX_PWM_DUTY_CYCLE){
+            m_dutyCycle = MAX_PWM_DUTY_CYCLE; // Cap at 100%
+        }else{
+            m_dutyCycle = p_dutyCycle;
+        }
+        return *this;
+    }   
+
+    void Pin<Mode::PWM>::configureTimer(){
+        std::uint32_t periodTicks = SMCLK / m_frequency; // Assuming SMCLK is 1MHz
+        std::uint32_t dutyTicks = (periodTicks * m_dutyCycle) / 100; // Duty cycle in ticks
         switch(m_port){
             case Port::P2_1: {
                 TB0CCR0 = periodTicks - 1; // Set period
@@ -579,5 +613,6 @@ namespace combatRobot::pins{ // #scope: pins
             }
         }
     }
+   
 
 } // #end: pins

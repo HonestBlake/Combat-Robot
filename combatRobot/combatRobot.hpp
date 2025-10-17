@@ -34,13 +34,20 @@ namespace combatRobot{
         enum class Port : std::uint8_t;
         enum class State : bool;
         enum class Mode : std::uint8_t;
-        class Pin;
+        namespace port{}
+        template<Mode t_mode> class Pin;
     } // #end: pins
 
     // #namespace: motors
     inline namespace motors{
         class Motor;
     } // #end: motors
+
+    // #namespace: ir
+    inline namespace ir{
+        class IRReceiver;
+        class IREmitter;
+    } // #end: ir
 
 
 } // #end: combatRobot

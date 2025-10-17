@@ -175,6 +175,30 @@ __/source/device.cpp.s:
 	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/build.make combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/__/source/device.cpp.s
 .PHONY : __/source/device.cpp.s
 
+__/source/ir.obj: __/source/ir.cpp.obj
+.PHONY : __/source/ir.obj
+
+# target to build an object file
+__/source/ir.cpp.obj:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/build.make combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/__/source/ir.cpp.obj
+.PHONY : __/source/ir.cpp.obj
+
+__/source/ir.i: __/source/ir.cpp.i
+.PHONY : __/source/ir.i
+
+# target to preprocess a source file
+__/source/ir.cpp.i:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/build.make combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/__/source/ir.cpp.i
+.PHONY : __/source/ir.cpp.i
+
+__/source/ir.s: __/source/ir.cpp.s
+.PHONY : __/source/ir.s
+
+# target to generate assembly for a file
+__/source/ir.cpp.s:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/build.make combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/__/source/ir.cpp.s
+.PHONY : __/source/ir.cpp.s
+
 __/source/motors.obj: __/source/motors.cpp.obj
 .PHONY : __/source/motors.obj
 
@@ -285,6 +309,9 @@ help:
 	@echo "... __/source/device.obj"
 	@echo "... __/source/device.i"
 	@echo "... __/source/device.s"
+	@echo "... __/source/ir.obj"
+	@echo "... __/source/ir.i"
+	@echo "... __/source/ir.s"
 	@echo "... __/source/motors.obj"
 	@echo "... __/source/motors.i"
 	@echo "... __/source/motors.s"

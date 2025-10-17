@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "../../coreRobot.pdb"
   "CMakeFiles/CoreRobot.dir/__/source/device.cpp.obj"
   "CMakeFiles/CoreRobot.dir/__/source/device.cpp.obj.d"
+  "CMakeFiles/CoreRobot.dir/__/source/ir.cpp.obj"
+  "CMakeFiles/CoreRobot.dir/__/source/ir.cpp.obj.d"
   "CMakeFiles/CoreRobot.dir/__/source/motors.cpp.obj"
   "CMakeFiles/CoreRobot.dir/__/source/motors.cpp.obj.d"
   "CMakeFiles/CoreRobot.dir/__/source/pins.cpp.obj"

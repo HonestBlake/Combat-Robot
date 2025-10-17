@@ -17,10 +17,10 @@ namespace combatRobot::device{ // #scope: device
     }
 
     void Device::raiseError(){
-        Pin led = Pin(Port::P1_0, Mode::OUTPUT);
+        Pin<Mode::OUTPUT> led = Pin<Mode::OUTPUT>(Port::P1_0, State::LOW);
         while(true){
             led.toggle();
-            delay(100);
+            delay(100); // 100 ms delay
         }
     }
 

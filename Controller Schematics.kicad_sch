@@ -1,0 +1,5509 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "dc96f6e8-dad3-49e6-9dc9-d1c2d511a6a9")
+	(paper "A4")
+	(lib_symbols
+		(symbol "COM-09032:COM-09032"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 16.002 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "COM-09032"
+				(at -7.62 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "COM-09032:XDCR_COM-09032"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "SparkFun Electronics"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "30.1mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "Package"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/COM-09032/SparkFun/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "N/A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/COM-09032/SparkFun/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "COM-09032"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "Joystick, 2 - Axis Analog (Resistive) Output"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "Not in stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "SparkFun Electronics"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "COM-09032_0_0"
+				(rectangle
+					(start -7.62 -17.78)
+					(end 7.62 15.24)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -12.7 12.7 0)
+					(length 5.08)
+					(name "V"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "V2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 10.16 0)
+					(length 5.08)
+					(name "V+"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "V1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 7.62 0)
+					(length 5.08)
+					(name "V-"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "V3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(name "H"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "H2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name "H+"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "H1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -2.54 0)
+					(length 5.08)
+					(name "H-"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "H3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -7.62 0)
+					(length 5.08)
+					(name "SEL+"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "B1A"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -10.16 0)
+					(length 5.08)
+					(name "SEL-"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "B2A"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -15.24 0)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "S1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -15.24 0)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "S2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -15.24 0)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "S3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -15.24 0)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "S4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LED:LD271"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0.508 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LD271"
+				(at -1.016 -2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "LED_THT:LED_D5.0mm_IRGrey"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.alliedelec.com/m/d/40788c34903a719969df15f1fbea1056.pdf"
+				(at -1.27 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "940nm IR-LED, 5mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "IR LED"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED*5.0mm*IRGrey*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LD271_0_1"
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.413 1.651) (xy -0.889 3.175) (xy -0.889 2.667) (xy -0.889 3.175) (xy -1.397 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.143 1.651) (xy 0.381 3.175) (xy 0.381 2.667)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy -2.54 0) (xy 0 1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.381 3.175) (xy -0.127 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LD271_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MSP-EXP430FR6989:MSP-EXP430FR6989"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -12.2428 15.9258 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "MSP-EXP430FR6989"
+				(at -12.7 -14.732 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "MSP-EXP430FR6989:MODULE_MSP-EXP430FR6989"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Texas Instruments"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/MSP-EXP430FR6989/Texas+Instruments/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "1.1"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/MSP-EXP430FR6989/Texas+Instruments/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "MSP-EXP430FR6989"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "MSP430FR6989 LaunchPad™ development kit"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "Texas Instruments"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "MSP-EXP430FR6989_1_0"
+				(rectangle
+					(start -12.7 -12.7)
+					(end 12.7 15.24)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -17.78 12.7 0)
+					(length 5.08)
+					(name "+3V3_J1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 10.16 0)
+					(length 5.08)
+					(name "ANALOG_IN_A10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 7.62 0)
+					(length 5.08)
+					(name "UART_RX"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 5.08 0)
+					(length 5.08)
+					(name "UART_TX"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 2.54 0)
+					(length 5.08)
+					(name "GPIO_P3.2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 0 0)
+					(length 5.08)
+					(name "ANALOG_IN_A11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional clock
+					(at -17.78 -2.54 0)
+					(length 5.08)
+					(name "SPI_CLK"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 -5.08 0)
+					(length 5.08)
+					(name "GPIO_P2.0"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional clock
+					(at -17.78 -7.62 0)
+					(length 5.08)
+					(name "I2C_SCL"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 -10.16 0)
+					(length 5.08)
+					(name "I2C_SDA"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "MSP-EXP430FR6989_2_0"
+				(rectangle
+					(start -12.7 -12.7)
+					(end 12.7 15.24)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -17.78 12.7 0)
+					(length 5.08)
+					(name "GND_J2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 10.16 0)
+					(length 5.08)
+					(name "GPIO/PWM"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 7.62 0)
+					(length 5.08)
+					(name "GPIO/SPI_CS/P1.5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 5.08 0)
+					(length 5.08)
+					(name "GPIO/NC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 2.54 0)
+					(length 5.08)
+					(name "RESET"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 0 0)
+					(length 5.08)
+					(name "SPI_MOSI"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 -2.54 0)
+					(length 5.08)
+					(name "SPI_MISO"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 -5.08 0)
+					(length 5.08)
+					(name "GPIO/SPI_CS/P2.5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 -7.62 0)
+					(length 5.08)
+					(name "GPIO/SPI_CS/P2.4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 -10.16 0)
+					(length 5.08)
+					(name "GPIO29/P4.7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "MSP-EXP430FR6989_3_0"
+				(rectangle
+					(start -15.24 -15.24)
+					(end 15.24 15.24)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -20.32 12.7 0)
+					(length 5.08)
+					(name "+5V_J3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 10.16 0)
+					(length 5.08)
+					(name "GND_J3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 7.62 0)
+					(length 5.08)
+					(name "A7/ANALOGIN"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 5.08 0)
+					(length 5.08)
+					(name "A6/ANALOGIN"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 2.54 0)
+					(length 5.08)
+					(name "A5/ANALOGIN"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 0 0)
+					(length 5.08)
+					(name "A4/ANALOGIN"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -2.54 0)
+					(length 5.08)
+					(name "A8/ANALOGIN/I2S_WS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -5.08 0)
+					(length 5.08)
+					(name "A9/ANALOGIN/I2S_CLK"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -7.62 0)
+					(length 5.08)
+					(name "ANALOGOUT/I2S_DO"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -10.16 0)
+					(length 5.08)
+					(name "ANALOGOUT/I2S_DI"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "MSP-EXP430FR6989_4_0"
+				(rectangle
+					(start -15.24 -12.7)
+					(end 15.24 15.24)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 12.7 0)
+					(length 5.08)
+					(name "P2.7/PWMOUT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 10.16 0)
+					(length 5.08)
+					(name "P2.6/PWMOUT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 7.62 0)
+					(length 5.08)
+					(name "P3.3//PWMOUT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 5.08 0)
+					(length 5.08)
+					(name "P3.6/PWMOUT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 2.54 0)
+					(length 5.08)
+					(name "P3.7/TIMER_CAPTURE"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 0 0)
+					(length 5.08)
+					(name "P2.2/TIMER_CAPTURE"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -2.54 0)
+					(length 5.08)
+					(name "P1.3/GPIO"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -5.08 0)
+					(length 5.08)
+					(name "P3.0/RTS/GPIO"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -7.62 0)
+					(length 5.08)
+					(name "P3.1/CTS/GPIO"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -10.16 0)
+					(length 5.08)
+					(name "P2.3/GPIO"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "MSP-EXP430FR6989_5_0"
+				(rectangle
+					(start -20.32 -12.7)
+					(end 20.32 10.16)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -25.4 7.62 0)
+					(length 5.08)
+					(name "TGT_GND_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "ESI1_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -25.4 5.08 0)
+					(length 5.08)
+					(name "ESIVSS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "ESI1_3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -25.4 2.54 0)
+					(length 5.08)
+					(name "ESICOM"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "ESI1_5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -25.4 0 0)
+					(length 5.08)
+					(name "ESICI3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "ESI1_7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -25.4 -2.54 0)
+					(length 5.08)
+					(name "ESICI1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "ESI1_9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -25.4 -5.08 0)
+					(length 5.08)
+					(name "ESICH3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "ESI1_11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -25.4 -7.62 0)
+					(length 5.08)
+					(name "ESICH1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "ESI1_13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -25.4 -10.16 0)
+					(length 5.08)
+					(name "TGT_GND_15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "ESI1_15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 25.4 7.62 180)
+					(length 5.08)
+					(name "3V3_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "ESI1_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 25.4 5.08 180)
+					(length 5.08)
+					(name "ESIVCC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "ESI1_4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 2.54 180)
+					(length 5.08)
+					(name "ESICI"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "ESI1_6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 0 180)
+					(length 5.08)
+					(name "ESICI2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "ESI1_8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 -2.54 180)
+					(length 5.08)
+					(name "ESICI0"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "ESI1_10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 -5.08 180)
+					(length 5.08)
+					(name "ESICH2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "ESI1_12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 -7.62 180)
+					(length 5.08)
+					(name "ESICH0"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "ESI1_14"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 -10.16 180)
+					(length 5.08)
+					(name "ESITEST4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "ESI1_16"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 228.6 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3963c293-8b4f-4ca3-b06d-ef2f263cc496")
+	)
+	(junction
+		(at 224.79 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58e03037-3e6d-4c02-850a-6d990b092701")
+	)
+	(junction
+		(at 107.95 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7bfc118f-2ee2-404f-b0d3-632604a8b7a4")
+	)
+	(junction
+		(at 228.6 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ef9498b-fe52-44b8-9399-b56b458968c8")
+	)
+	(junction
+		(at 167.64 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b3a72a8a-2713-45b5-830c-547a4670dd59")
+	)
+	(junction
+		(at 229.87 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bb6d9954-837d-464c-bee5-829e71e79dbc")
+	)
+	(junction
+		(at 69.85 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cabe5e12-e7ae-4465-b370-75781755ca09")
+	)
+	(junction
+		(at 107.95 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cb09d99c-bdcc-4961-8949-497d0f2b5aae")
+	)
+	(junction
+		(at 99.06 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f0816417-449d-44a4-83af-1a7b961ce24a")
+	)
+	(wire
+		(pts
+			(xy 229.87 102.87) (xy 229.87 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "028abf54-d0c7-49cc-bdd9-42b447e48b68")
+	)
+	(wire
+		(pts
+			(xy 173.99 99.06) (xy 177.8 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06a31829-81d8-4c75-a4fd-4d479069b45a")
+	)
+	(wire
+		(pts
+			(xy 69.85 67.31) (xy 69.85 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c25e878-7246-472e-80d2-cc9acf911792")
+	)
+	(wire
+		(pts
+			(xy 85.09 67.31) (xy 69.85 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11a8bcb2-9c92-49dd-8ee2-1ce6bfa6765d")
+	)
+	(wire
+		(pts
+			(xy 165.1 91.44) (xy 165.1 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27592b55-fa78-48d1-9e9b-9a7d8926f081")
+	)
+	(wire
+		(pts
+			(xy 167.64 91.44) (xy 167.64 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29731fc6-1711-4292-8483-deac4be626b2")
+	)
+	(wire
+		(pts
+			(xy 234.95 133.35) (xy 234.95 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30e84368-8805-4a0c-98e2-e98cfdc4414a")
+	)
+	(wire
+		(pts
+			(xy 69.85 74.93) (xy 69.85 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ab6603d-e5a1-4756-a369-34bfc14315fb")
+	)
+	(wire
+		(pts
+			(xy 167.64 91.44) (xy 229.87 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d7980c6-a6dd-4306-9f27-d18648e600d3")
+	)
+	(wire
+		(pts
+			(xy 240.03 125.73) (xy 228.6 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52a6bb73-6da2-42fb-bca5-4f67645a3e02")
+	)
+	(wire
+		(pts
+			(xy 99.06 52.07) (xy 99.06 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5577599f-e4c8-462d-8006-19a0945f40f1")
+	)
+	(wire
+		(pts
+			(xy 165.1 111.76) (xy 177.8 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59561108-cc45-406d-872d-dd72af1a37fc")
+	)
+	(wire
+		(pts
+			(xy 224.79 115.57) (xy 224.79 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69e3f401-48ca-4da9-8def-cd341e09ccbd")
+	)
+	(wire
+		(pts
+			(xy 224.79 93.98) (xy 224.79 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a13c925-32a0-4f26-adf7-054390170cd6")
+	)
+	(wire
+		(pts
+			(xy 167.64 133.35) (xy 234.95 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a6be596-ad2d-41d9-8e3b-d96802644260")
+	)
+	(wire
+		(pts
+			(xy 99.06 74.93) (xy 124.46 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80ee86b7-e9b2-4af7-b8d8-b3e890e4835b")
+	)
+	(wire
+		(pts
+			(xy 107.95 40.64) (xy 110.49 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82fec16a-947d-40bb-bfbc-e128746a7d99")
+	)
+	(wire
+		(pts
+			(xy 95.25 67.31) (xy 107.95 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86ac05a0-181c-4738-8866-242bd29f5fd9")
+	)
+	(wire
+		(pts
+			(xy 240.03 115.57) (xy 224.79 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87d4ead1-c3b2-4ea5-ac30-e8a652435d5c")
+	)
+	(wire
+		(pts
+			(xy 228.6 107.95) (xy 228.6 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89601ae8-419f-4d42-96df-f2a7a2cb1dfb")
+	)
+	(wire
+		(pts
+			(xy 240.03 102.87) (xy 229.87 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "908a0e16-1da2-4fc1-9450-562d839b923d")
+	)
+	(wire
+		(pts
+			(xy 99.06 59.69) (xy 99.06 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93b07ee2-2302-4ae3-aae3-7a52b68cb1ea")
+	)
+	(wire
+		(pts
+			(xy 172.72 109.22) (xy 177.8 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "947093a9-75b1-482e-bbf6-4ff570371e55")
+	)
+	(wire
+		(pts
+			(xy 240.03 105.41) (xy 224.79 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5108545-039f-4ffa-a263-7fe011af9282")
+	)
+	(wire
+		(pts
+			(xy 95.25 74.93) (xy 99.06 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2168e26-6262-49bc-9500-fcdc7c61f895")
+	)
+	(wire
+		(pts
+			(xy 228.6 125.73) (xy 228.6 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7367f2b-9525-46d0-bc74-a75a509e81d1")
+	)
+	(wire
+		(pts
+			(xy 165.1 91.44) (xy 167.64 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bff3358c-4545-4bc8-95aa-5f6e32718889")
+	)
+	(wire
+		(pts
+			(xy 99.06 40.64) (xy 107.95 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c301406a-c3b2-4466-805b-12cf3ecb2c54")
+	)
+	(wire
+		(pts
+			(xy 233.68 123.19) (xy 240.03 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5391ba1-2fa2-49e7-b9a5-6c7440a5d4d4")
+	)
+	(wire
+		(pts
+			(xy 177.8 106.68) (xy 167.64 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb4dee41-b99c-4b66-8492-3f11e803e671")
+	)
+	(wire
+		(pts
+			(xy 69.85 74.93) (xy 85.09 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc157d5b-b2b8-4f09-b6f0-e040d316f67c")
+	)
+	(wire
+		(pts
+			(xy 107.95 59.69) (xy 107.95 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cddbcc2c-c5e8-4a83-a71f-c860cedfb965")
+	)
+	(wire
+		(pts
+			(xy 167.64 104.14) (xy 177.8 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cffeed90-f80e-41eb-b4fa-d814ebf93389")
+	)
+	(wire
+		(pts
+			(xy 107.95 67.31) (xy 124.46 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2a81870-5240-4024-8493-a7e1ed61f341")
+	)
+	(wire
+		(pts
+			(xy 234.95 113.03) (xy 240.03 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db82b5ee-8319-4a80-8725-8a192fd464ca")
+	)
+	(wire
+		(pts
+			(xy 228.6 118.11) (xy 240.03 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd0c837f-d3b3-49a5-af67-d7a5945f33b1")
+	)
+	(wire
+		(pts
+			(xy 240.03 107.95) (xy 228.6 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dea96f12-0762-46c6-9f3b-fe4574dfcb2d")
+	)
+	(wire
+		(pts
+			(xy 229.87 91.44) (xy 233.68 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9679988-eb3e-450b-9c79-e8cc09a5a307")
+	)
+	(wire
+		(pts
+			(xy 107.95 40.64) (xy 107.95 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea7f9447-173b-470b-b5ae-275b2863f519")
+	)
+	(wire
+		(pts
+			(xy 233.68 99.06) (xy 233.68 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea920fc0-49c3-440d-ac9d-4c7ec129352f")
+	)
+	(wire
+		(pts
+			(xy 228.6 118.11) (xy 228.6 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f343fcdf-de38-4034-9370-cd3a8fd1da79")
+	)
+	(wire
+		(pts
+			(xy 167.64 106.68) (xy 167.64 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa199ed9-bb7b-4622-bc97-dbc9e448a57f")
+	)
+	(global_label "5v"
+		(shape input)
+		(at 110.49 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2a2decbb-acb7-4104-a8b3-7313564bf851")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 115.6523 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5v"
+		(shape input)
+		(at 224.79 93.98 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "53d7a850-c988-45d6-b084-714358d82372")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 219.6277 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5v"
+		(shape input)
+		(at 173.99 99.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e3053f07-96ea-4e2a-80e3-cbd21ab77dbb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 168.8277 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MSP-EXP430FR6989:MSP-EXP430FR6989")
+		(at 198.12 111.76 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07f2995d-2eb7-4e6f-afbd-c3c81b3debb9")
+		(property "Reference" "U1"
+			(at 214.63 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MSP-EXP430FR6989"
+			(at 214.63 113.0299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MSP-EXP430FR6989:MODULE_MSP-EXP430FR6989"
+			(at 198.12 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Texas Instruments"
+			(at 198.12 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 198.12 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 198.12 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 198.12 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/MSP-EXP430FR6989/Texas+Instruments/view-part/?ref=eda"
+			(at 198.12 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 198.12 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "1.1"
+			(at 198.12 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/MSP-EXP430FR6989/Texas+Instruments/view-part/?ref=snap"
+			(at 198.12 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "MSP-EXP430FR6989"
+			(at 198.12 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "MSP430FR6989 LaunchPad™ development kit"
+			(at 198.12 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 198.12 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Texas Instruments"
+			(at 198.12 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "15"
+			(uuid "da513577-6c83-4c0a-84b8-0d7f8716412b")
+		)
+		(pin "3"
+			(uuid "a8f98096-eb78-4eb8-9788-7d22e1367d24")
+		)
+		(pin "16"
+			(uuid "fd361583-b850-4e9f-b52f-e96599a52349")
+		)
+		(pin "25"
+			(uuid "93c26701-05b9-4b75-aa24-4b126da0a431")
+		)
+		(pin "8"
+			(uuid "c4605bc7-0037-43b0-9708-299faecb59f7")
+		)
+		(pin "17"
+			(uuid "d64f1130-fb70-4a93-846b-bd8983e8ce9e")
+		)
+		(pin "7"
+			(uuid "0937b454-f462-4dc2-b427-d249c18e4fc6")
+		)
+		(pin "40"
+			(uuid "8e3c4bd9-c203-4d9d-89da-2d364fdaf7c6")
+		)
+		(pin "38"
+			(uuid "34fba7ab-83cc-4a46-b495-6419accb5451")
+		)
+		(pin "6"
+			(uuid "8bcb15f1-d014-43c9-adcd-595b047c3a09")
+		)
+		(pin "5"
+			(uuid "d58bb88b-1349-4ae5-8bd1-e81f314441db")
+		)
+		(pin "14"
+			(uuid "3a4c1efa-adc5-4765-923a-e24129a1eee1")
+		)
+		(pin "19"
+			(uuid "18926b6d-260b-4975-9212-a293166ee66e")
+		)
+		(pin "13"
+			(uuid "1dfe3931-ae1f-4500-92e1-a1edf76177b9")
+		)
+		(pin "30"
+			(uuid "15fa7654-5221-4f1f-8d4f-cb2c3ff9307b")
+		)
+		(pin "1"
+			(uuid "b970b58f-e0d4-4144-a7d0-8cacabeff26e")
+		)
+		(pin "2"
+			(uuid "3a6623f0-1c7d-4438-8784-85cdf4c8a38d")
+		)
+		(pin "18"
+			(uuid "943c203e-f33e-41ef-9a0a-53dfcaf12026")
+		)
+		(pin "11"
+			(uuid "9e4cdef5-eb2d-4215-8d74-4dc1bd14de4b")
+		)
+		(pin "9"
+			(uuid "2b352ca3-e985-4452-bed9-6019fed5c912")
+		)
+		(pin "12"
+			(uuid "40c6976b-aa9a-46ba-84cf-22194f4cc7da")
+		)
+		(pin "23"
+			(uuid "fb3ea441-12f9-4674-bfbf-aba7a1f921d8")
+		)
+		(pin "4"
+			(uuid "d9e9e73f-9aea-4b08-96ca-c9165c2a9eea")
+		)
+		(pin "20"
+			(uuid "ca2bd592-7f54-4972-8c27-cba9a0b04474")
+		)
+		(pin "10"
+			(uuid "36fb9a5f-d2e4-4952-a8dc-77caa481fe59")
+		)
+		(pin "21"
+			(uuid "4871fc39-051f-4d7e-87b4-82c74863e01a")
+		)
+		(pin "22"
+			(uuid "70f6694e-cf25-4c64-8275-02c1d78d738b")
+		)
+		(pin "24"
+			(uuid "fd04e333-4726-4521-a5e1-82c0aa6b1911")
+		)
+		(pin "26"
+			(uuid "07a1d51d-1f7a-4f76-a10a-23303fc49ccf")
+		)
+		(pin "27"
+			(uuid "7255f936-d8ef-44c6-a282-d31cf50893b7")
+		)
+		(pin "28"
+			(uuid "c159f018-91a9-4d88-ae60-077607c29b3b")
+		)
+		(pin "29"
+			(uuid "78bd858f-39c8-473a-92d9-c72979160219")
+		)
+		(pin "39"
+			(uuid "a01c5665-73a1-48f7-9820-68da3184e403")
+		)
+		(pin "ESI1_9"
+			(uuid "04d599bf-9779-415a-9482-b3291a4ef32e")
+		)
+		(pin "ESI1_8"
+			(uuid "41e9eb19-4161-4725-8450-bf8c729b6440")
+		)
+		(pin "34"
+			(uuid "cb00ee44-846f-4ae1-ab70-e95aa2e65787")
+		)
+		(pin "ESI1_5"
+			(uuid "91980e0f-b9dd-4bfb-b6ac-58724000d9f1")
+		)
+		(pin "32"
+			(uuid "81124244-e849-4673-afaf-82ba11466df7")
+		)
+		(pin "ESI1_11"
+			(uuid "b140778b-66c6-459f-94c4-c3ce7476d197")
+		)
+		(pin "ESI1_15"
+			(uuid "b06824d1-e3a3-4ff0-b06e-38f3554ae40a")
+		)
+		(pin "35"
+			(uuid "5d5aac4d-9d54-418f-9a79-52b1b27362ba")
+		)
+		(pin "ESI1_2"
+			(uuid "f519ddfe-2d9f-41e6-a13b-b08826a24045")
+		)
+		(pin "37"
+			(uuid "7e866a69-08c3-4b05-83f2-29b5903795fb")
+		)
+		(pin "33"
+			(uuid "9c7fa3c8-b67d-4f4c-a6d7-af7b171dcd87")
+		)
+		(pin "ESI1_3"
+			(uuid "293a0ba4-ef1c-424b-95b5-d7de28f9d020")
+		)
+		(pin "ESI1_13"
+			(uuid "ba6951e6-298b-48ba-ade1-974b43910b06")
+		)
+		(pin "31"
+			(uuid "483082ca-5f9c-44dd-b196-163e013fc787")
+		)
+		(pin "ESI1_1"
+			(uuid "4d17cbfb-8d9d-4fd0-9812-94c46a372a9c")
+		)
+		(pin "ESI1_10"
+			(uuid "58d65452-1b96-4975-8ab1-b001a0adc479")
+		)
+		(pin "ESI1_7"
+			(uuid "e4718c1b-b760-4778-94fe-843cce942af0")
+		)
+		(pin "ESI1_12"
+			(uuid "97a45e79-1ef7-4300-9c77-d403259a9efd")
+		)
+		(pin "ESI1_6"
+			(uuid "61055c7d-9461-4f37-8623-844564c73dd2")
+		)
+		(pin "ESI1_4"
+			(uuid "9a080f98-6e12-48af-bf69-28180a05fd6d")
+		)
+		(pin "ESI1_14"
+			(uuid "07823dc9-a1e4-40f6-bd06-88fac805135e")
+		)
+		(pin "ESI1_16"
+			(uuid "cb0d4a1f-e068-403a-9c7c-855f9f201967")
+		)
+		(pin "36"
+			(uuid "55efca9a-3f63-415b-beca-ecf9b9cc44fa")
+		)
+		(instances
+			(project ""
+				(path "/dc96f6e8-dad3-49e6-9dc9-d1c2d511a6a9"
+					(reference "U1")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 90.17 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0b72e38e-d910-4c76-b082-f4c34bd99cee")
+		(property "Reference" "SW1"
+			(at 94.869 77.343 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 88.265 77.089 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 90.17 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 90.17 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9829e65f-8bfe-4c1b-9ec6-ec7b67fd9973")
+		)
+		(pin "2"
+			(uuid "db892ccf-64b4-4cac-877b-2b7c4d7f5509")
+		)
+		(instances
+			(project ""
+				(path "/dc96f6e8-dad3-49e6-9dc9-d1c2d511a6a9"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 111.76 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e8aef58-b741-4247-8745-bbbb267881ec")
+		(property "Reference" "R4"
+			(at 114.3 123.1899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 114.3 125.7299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.982 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 111.76 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f95136cd-993f-40e2-88a6-70f06746cd7b")
+		)
+		(pin "2"
+			(uuid "fbc2c2db-9e68-4c0d-88bc-c971efdab465")
+		)
+		(instances
+			(project "getting-started"
+				(path "/dc96f6e8-dad3-49e6-9dc9-d1c2d511a6a9"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 107.95 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "12ccd9dd-6820-4526-9aeb-114a06b7b6c9")
+		(property "Reference" "R2"
+			(at 110.49 54.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 110.49 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.172 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 107.95 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2f393bf1-31c7-49c3-ad03-2118bcebddde")
+		)
+		(pin "2"
+			(uuid "2a45da20-ff14-44d9-9b13-0f1da8b2c89b")
+		)
+		(instances
+			(project "getting-started"
+				(path "/dc96f6e8-dad3-49e6-9dc9-d1c2d511a6a9"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 124.46 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1853e629-1678-46e4-b39b-89708fe14960")
+		(property "Reference" "R3"
+			(at 127 101.5999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 127 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 122.682 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 124.46 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "52209958-c708-4f86-ba7f-1ccbb28333ff")
+		)
+		(pin "2"
+			(uuid "ec7028fb-11de-4aae-bb13-c20adc53f761")
+		)
+		(instances
+			(project "getting-started"
+				(path "/dc96f6e8-dad3-49e6-9dc9-d1c2d511a6a9"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:LD271")
+		(at 223.52 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "185dcec8-95cd-457e-ba96-30c1302a1eca")
+		(property "Reference" "D1"
+			(at 222.377 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LD271"
+			(at 222.377 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D5.0mm_IRGrey"
+			(at 223.52 65.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.alliedelec.com/m/d/40788c34903a719969df15f1fbea1056.pdf"
+			(at 222.25 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "940nm IR-LED, 5mm"
+			(at 223.52 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c17b9cb-1e5b-4c1c-96e1-47044026b64b")
+		)
+		(pin "2"
+			(uuid "16e4d949-b7e0-456b-bfde-d48e5457301e")
+		)
+		(instances
+			(project ""
+				(path "/dc96f6e8-dad3-49e6-9dc9-d1c2d511a6a9"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 228.6 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23f79368-5309-40e8-afdf-64172b0ad4aa")
+		(property "Reference" "#PWR01"
+			(at 228.6 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 228.6 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 228.6 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6bf1f924-d2a2-49c8-8262-603d5061615a")
+		)
+		(instances
+			(project ""
+				(path "/dc96f6e8-dad3-49e6-9dc9-d1c2d511a6a9"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:LD271")
+		(at 241.3 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30af2619-dd8d-484a-9ea8-f1ac2a27c9d5")
+		(property "Reference" "D2"
+			(at 240.157 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LD271"
+			(at 240.157 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D5.0mm_IRGrey"
+			(at 241.3 65.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.alliedelec.com/m/d/40788c34903a719969df15f1fbea1056.pdf"
+			(at 240.03 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "940nm IR-LED, 5mm"
+			(at 241.3 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "61887dd5-22eb-49ac-8276-eca74d133861")
+		)
+		(pin "2"
+			(uuid "e2bb1a9b-daa3-47ad-ad3e-672c73c36d51")
+		)
+		(instances
+			(project ""
+				(path "/dc96f6e8-dad3-49e6-9dc9-d1c2d511a6a9"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 99.06 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "47dc35de-55fa-4188-9f07-bd2be0c12fcb")
+		(property "Reference" "R1"
+			(at 101.6 54.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 101.6 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.282 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 99.06 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "654bd358-a5bc-4dee-bfaa-f5fa99edbe02")
+		)
+		(pin "2"
+			(uuid "69d370da-ba34-488a-9704-2820a8a7010b")
+		)
+		(instances
+			(project ""
+				(path "/dc96f6e8-dad3-49e6-9dc9-d1c2d511a6a9"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MSP-EXP430FR6989:MSP-EXP430FR6989")
+		(at 200.66 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "539c48cf-5185-4613-9955-fec6b78954b4")
+		(property "Reference" "U1"
+			(at 214.63 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MSP-EXP430FR6989"
+			(at 214.63 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MSP-EXP430FR6989:MODULE_MSP-EXP430FR6989"
+			(at 200.66 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Texas Instruments"
+			(at 200.66 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 200.66 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 200.66 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 200.66 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/MSP-EXP430FR6989/Texas+Instruments/view-part/?ref=eda"
+			(at 200.66 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 200.66 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "1.1"
+			(at 200.66 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/MSP-EXP430FR6989/Texas+Instruments/view-part/?ref=snap"
+			(at 200.66 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "MSP-EXP430FR6989"
+			(at 200.66 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "MSP430FR6989 LaunchPad™ development kit"
+			(at 200.66 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 200.66 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Texas Instruments"
+			(at 200.66 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "19"
+			(uuid "5fc2a577-f4a7-486b-8598-dda753f7ccfe")
+		)
+		(pin "3"
+			(uuid "dd9700d5-5e3c-4337-a95d-59f4c1324c0e")
+		)
+		(pin "5"
+			(uuid "0888878e-82c8-4097-918f-33c25a3be167")
+		)
+		(pin "1"
+			(uuid "ab8aa0a2-61dd-4f0f-ad11-07ae2d3e27bc")
+		)
+		(pin "7"
+			(uuid "388dd3db-207f-4bc4-9846-c84dbf0f3076")
+		)
+		(pin "2"
+			(uuid "e4d6dc4e-89d2-4517-8185-1fd5e40b0c7e")
+		)
+		(pin "8"
+			(uuid "b366fcdc-e24f-4bca-9604-1bb0e78843cb")
+		)
+		(pin "9"
+			(uuid "e55e1f0c-a78c-497f-b272-e3e170965838")
+		)
+		(pin "10"
+			(uuid "3503742d-1c75-45da-90a5-6a052ee4f06b")
+		)
+		(pin "4"
+			(uuid "096b946e-dff8-4e05-a317-b0c4fff6dd34")
+		)
+		(pin "20"
+			(uuid "97c3e8ef-5f48-4766-8427-1e47c3c9cd2c")
+		)
+		(pin "18"
+			(uuid "d305887b-65e2-477d-8198-79505083d274")
+		)
+		(pin "17"
+			(uuid "bf841e21-161c-4776-9b58-4f6c04821e93")
+		)
+		(pin "6"
+			(uuid "cb4e5135-fe56-4119-8250-f51cf8c7a61e")
+		)
+		(pin "16"
+			(uuid "9976d925-4a52-4475-b7e3-4aa71a9f6b2b")
+		)
+		(pin "14"
+			(uuid "5386b482-36f7-4ccb-98e4-2bf0e3b541f4")
+		)
+		(pin "11"
+			(uuid "363bf5e6-a458-4aa3-bbd0-747556dc7032")
+		)
+		(pin "12"
+			(uuid "9a9e19cb-d616-46e9-bc2f-01f948b31bac")
+		)
+		(pin "21"
+			(uuid "f4a0f93a-7920-4411-b6ee-ba50c75506be")
+		)
+		(pin "22"
+			(uuid "e33e6deb-459b-45dd-b944-c5d44d5920c5")
+		)
+		(pin "24"
+			(uuid "173faca9-3f50-4ad3-9d42-546c4dd54a14")
+		)
+		(pin "13"
+			(uuid "37495f84-7007-4179-a1ad-9ed5b6d948f3")
+		)
+		(pin "23"
+			(uuid "2657ae00-a742-4c36-aae7-c5d085728906")
+		)
+		(pin "15"
+			(uuid "238c6ed2-93ad-4a76-bf5f-b5820ffac48e")
+		)
+		(pin "25"
+			(uuid "621ca33f-c2f3-4148-a0ef-fcccc478c0f5")
+		)
+		(pin "26"
+			(uuid "4626be42-480d-4104-a691-b49f1d0980b3")
+		)
+		(pin "35"
+			(uuid "6ef40db1-c516-4f94-8706-517a64444e1e")
+		)
+		(pin "38"
+			(uuid "f68b997d-1b58-40e3-86fa-3d0c68abc75a")
+		)
+		(pin "ESI1_10"
+			(uuid "af521573-54d2-4c31-bd7d-a22a386a7826")
+		)
+		(pin "36"
+			(uuid "7e1f56c4-b96b-4424-8839-4b9897edba6f")
+		)
+		(pin "ESI1_5"
+			(uuid "310e71f4-a406-4274-b37c-e4ff00fe1917")
+		)
+		(pin "40"
+			(uuid "10cc5345-7802-446e-801e-53c989a2c710")
+		)
+		(pin "ESI1_3"
+			(uuid "6c3fdbaa-9c64-4abf-8515-d079b8a2d9d0")
+		)
+		(pin "ESI1_11"
+			(uuid "fe507b5b-7ea2-4cd0-bee0-5e29efc7b601")
+		)
+		(pin "ESI1_2"
+			(uuid "9d74c138-c4ff-4882-81a2-aece08f70547")
+		)
+		(pin "ESI1_8"
+			(uuid "ce66ea06-3cd3-4c11-aad6-3f9c558c15a4")
+		)
+		(pin "39"
+			(uuid "3cb23ce8-4b0f-407c-8674-68a93742c646")
+		)
+		(pin "30"
+			(uuid "21a52b5a-5e6c-4fed-b07f-fc6eef197c40")
+		)
+		(pin "32"
+			(uuid "608cd974-e812-4741-91d9-b7b69057d095")
+		)
+		(pin "33"
+			(uuid "d1c23642-4f54-47f6-8164-1a2c9bf9afe7")
+		)
+		(pin "ESI1_1"
+			(uuid "5a0c5cde-0138-4500-b6c4-5669e5ead485")
+		)
+		(pin "37"
+			(uuid "112184c8-7930-400f-94da-a1f5a010d86f")
+		)
+		(pin "ESI1_13"
+			(uuid "05f50db3-cea8-4f6d-9038-c1274098cd73")
+		)
+		(pin "31"
+			(uuid "c6f3511b-dfb5-46d3-bf18-d8cf2b7df25e")
+		)
+		(pin "ESI1_15"
+			(uuid "43b107cb-4db1-4b4f-93d4-017b21649f10")
+		)
+		(pin "ESI1_4"
+			(uuid "09fd132d-f170-4c00-92da-8a670e6c9690")
+		)
+		(pin "29"
+			(uuid "8249ba0e-87d3-4984-8d33-78ea2a112ddd")
+		)
+		(pin "ESI1_9"
+			(uuid "daecca5d-3491-401a-9dec-4f9a81bb2bb6")
+		)
+		(pin "ESI1_6"
+			(uuid "fca1dbdb-cee2-4fef-910b-4b7b9e41e549")
+		)
+		(pin "27"
+			(uuid "a3b00929-3697-42c1-9098-b58b541933b2")
+		)
+		(pin "28"
+			(uuid "f68af46d-5be9-43bf-a47f-ab6ded525743")
+		)
+		(pin "34"
+			(uuid "1a7a504c-da2c-478d-b2be-1109cab041b0")
+		)
+		(pin "ESI1_7"
+			(uuid "daabbc54-947f-4c87-833a-d47e753ed9dc")
+		)
+		(pin "ESI1_16"
+			(uuid "77ff0e48-d521-4583-a313-d13530308344")
+		)
+		(pin "ESI1_12"
+			(uuid "c6e33b9f-52a4-48fb-82f5-cc3d5e432ab4")
+		)
+		(pin "ESI1_14"
+			(uuid "0680bf2f-9d21-48ba-9197-670c6237b257")
+		)
+		(instances
+			(project ""
+				(path "/dc96f6e8-dad3-49e6-9dc9-d1c2d511a6a9"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 233.68 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a5c8c6b-1cd1-485c-85ac-3e9fd4fac660")
+		(property "Reference" "R5"
+			(at 236.22 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 236.22 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.902 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 233.68 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc105a33-ee8c-4114-958d-5a7dc729d14a")
+		)
+		(pin "2"
+			(uuid "01449477-205f-4ed2-bc4f-4bbbef369c9a")
+		)
+		(instances
+			(project "getting-started"
+				(path "/dc96f6e8-dad3-49e6-9dc9-d1c2d511a6a9"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "COM-09032:COM-09032")
+		(at 252.73 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76aa91f0-b385-4b2c-a85d-9a9e12c7476f")
+		(property "Reference" "U3"
+			(at 261.62 115.5699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "COM-09032"
+			(at 261.62 118.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "COM-09032:XDCR_COM-09032"
+			(at 252.73 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 252.73 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 252.73 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "SparkFun Electronics"
+			(at 252.73 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "30.1mm"
+			(at 252.73 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "Package"
+			(at 252.73 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 252.73 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/COM-09032/SparkFun/view-part/?ref=eda"
+			(at 252.73 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 252.73 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "N/A"
+			(at 252.73 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/COM-09032/SparkFun/view-part/?ref=snap"
+			(at 252.73 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "COM-09032"
+			(at 252.73 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Joystick, 2 - Axis Analog (Resistive) Output"
+			(at 252.73 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 252.73 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "SparkFun Electronics"
+			(at 252.73 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "V1"
+			(uuid "cdb9a9e3-02cd-4516-8964-25bb4ddd0f2d")
+		)
+		(pin "V3"
+			(uuid "e6b325b6-e4e0-493f-b2ee-807b022fafc8")
+		)
+		(pin "S1"
+			(uuid "8a071535-0156-4be5-989a-4802ddfd1bd5")
+		)
+		(pin "V2"
+			(uuid "d0f71772-acff-4794-881c-48060b4f0a46")
+		)
+		(pin "B1A"
+			(uuid "d40296d8-c1bd-4e05-9382-7d91c12a6e34")
+		)
+		(pin "H3"
+			(uuid "73f79ac2-0c33-44f5-8cbf-0f472dead571")
+		)
+		(pin "B2A"
+			(uuid "367bd8bc-3b8e-4943-8e73-e79cc4adf92e")
+		)
+		(pin "S2"
+			(uuid "39c3c328-b3c0-4788-892f-53535d66863b")
+		)
+		(pin "S3"
+			(uuid "bc207697-ab04-4117-bf7a-a711945efb57")
+		)
+		(pin "H2"
+			(uuid "dc46fb72-1aeb-45b2-bec9-f57bfe8ff151")
+		)
+		(pin "H1"
+			(uuid "fb4f3bd6-eecb-47a2-b008-a311104042c7")
+		)
+		(pin "S4"
+			(uuid "dda51e57-2b3a-4de3-8cb0-637181c9e15a")
+		)
+		(instances
+			(project ""
+				(path "/dc96f6e8-dad3-49e6-9dc9-d1c2d511a6a9"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 90.17 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7c08fa73-2cf6-4af0-8bcf-9b747e22c120")
+		(property "Reference" "SW2"
+			(at 95.123 68.961 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 89.281 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 90.17 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 90.17 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d0146af0-2b83-43c3-ba4f-6de5a47826c8")
+		)
+		(pin "2"
+			(uuid "3b64215b-fcff-4d9c-8ab8-81ad320683ba")
+		)
+		(instances
+			(project ""
+				(path "/dc96f6e8-dad3-49e6-9dc9-d1c2d511a6a9"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MSP-EXP430FR6989:MSP-EXP430FR6989")
+		(at 123.19 157.48 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94ad6b1f-f615-4b82-ae12-fa0d1e121032")
+		(property "Reference" "U1"
+			(at 137.16 154.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MSP-EXP430FR6989"
+			(at 137.16 157.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MSP-EXP430FR6989:MODULE_MSP-EXP430FR6989"
+			(at 123.19 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Texas Instruments"
+			(at 123.19 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 123.19 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 123.19 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 123.19 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/MSP-EXP430FR6989/Texas+Instruments/view-part/?ref=eda"
+			(at 123.19 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 123.19 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "1.1"
+			(at 123.19 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/MSP-EXP430FR6989/Texas+Instruments/view-part/?ref=snap"
+			(at 123.19 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "MSP-EXP430FR6989"
+			(at 123.19 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "MSP430FR6989 LaunchPad™ development kit"
+			(at 123.19 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 123.19 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Texas Instruments"
+			(at 123.19 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "c12af399-e255-4249-a5c0-f82da0997fd0")
+		)
+		(pin "6"
+			(uuid "9d72468e-f742-48b0-bf7f-8165c3fd48ba")
+		)
+		(pin "15"
+			(uuid "ad678cd5-4167-499a-bfa0-2e1b50d2448d")
+		)
+		(pin "23"
+			(uuid "799ba2ad-6dde-4e43-bcfe-9377001eba94")
+		)
+		(pin "13"
+			(uuid "b772bc94-db9d-4279-9986-b06cdbec6c0d")
+		)
+		(pin "22"
+			(uuid "aea001df-83d6-4956-9d05-6637eaf06eaa")
+		)
+		(pin "40"
+			(uuid "7666eaee-d639-45ab-96f5-676ec060fe3c")
+		)
+		(pin "2"
+			(uuid "bab54acc-823a-41d5-85f0-6450e8d77b35")
+		)
+		(pin "14"
+			(uuid "3afb526c-d7cd-4d87-a5ec-95940ed0278d")
+		)
+		(pin "21"
+			(uuid "a41afe81-1dde-4fdf-aa75-ab6f2683d191")
+		)
+		(pin "11"
+			(uuid "25827fe6-05aa-4852-9194-91368ca036d7")
+		)
+		(pin "5"
+			(uuid "43bc91f5-a7ab-46c7-8be2-3f7897f1638e")
+		)
+		(pin "1"
+			(uuid "51e20402-2952-4635-9ae2-71d348568f02")
+		)
+		(pin "7"
+			(uuid "466e5c16-95b4-41f0-ab5f-95b1d2d1de2f")
+		)
+		(pin "19"
+			(uuid "f28cf3f0-a7ac-438b-894c-d87b9e136975")
+		)
+		(pin "25"
+			(uuid "ff767c53-9f79-4f5f-b215-55c62de32bd8")
+		)
+		(pin "3"
+			(uuid "c560d859-202a-495b-af02-4374e2a4bcb3")
+		)
+		(pin "16"
+			(uuid "4cd37cf2-c954-4265-8333-828a31a293be")
+		)
+		(pin "4"
+			(uuid "2fc49e8e-8e92-4cd7-b495-0c875dadc65c")
+		)
+		(pin "26"
+			(uuid "caa3d0f0-21c6-4630-975c-d36d4f24a8ad")
+		)
+		(pin "28"
+			(uuid "760a7921-4fb5-4d91-920f-68368e6ea6d6")
+		)
+		(pin "30"
+			(uuid "c90df929-db92-4b32-a604-dbafe7f29801")
+		)
+		(pin "20"
+			(uuid "06dc2962-1fe6-467a-ac74-b47b78ab2318")
+		)
+		(pin "9"
+			(uuid "091ea234-cd52-4181-9a09-60109feee81c")
+		)
+		(pin "18"
+			(uuid "8a79b381-7685-4e06-82fc-215453266501")
+		)
+		(pin "10"
+			(uuid "9026b4a6-b414-467f-a271-c00f2f049dd6")
+		)
+		(pin "17"
+			(uuid "6cf5246f-1d90-447e-b060-c57d383dd424")
+		)
+		(pin "12"
+			(uuid "21a8ed3b-0367-424e-8412-7248eaa238d3")
+		)
+		(pin "24"
+			(uuid "9e3b36d5-16fd-4816-abf5-30204f4bca70")
+		)
+		(pin "27"
+			(uuid "3553a120-1df5-46a0-96d9-3fc41cb471e9")
+		)
+		(pin "29"
+			(uuid "1d8fbbe9-f003-466f-8baa-f72d0e666d7c")
+		)
+		(pin "37"
+			(uuid "2c5de765-76d4-4c8d-9902-067bb23d235c")
+		)
+		(pin "ESI1_8"
+			(uuid "860bbdd2-4559-449a-816c-b2bb0881f4db")
+		)
+		(pin "35"
+			(uuid "c991135c-3497-4464-a76d-a1e62d08933b")
+		)
+		(pin "32"
+			(uuid "bc4f83db-65e1-4ff6-8c67-f7960e8b4165")
+		)
+		(pin "31"
+			(uuid "181b0772-6878-424e-b81f-ed5c73a50699")
+		)
+		(pin "ESI1_1"
+			(uuid "c5432daf-5fc3-406b-85d7-372892ac6eef")
+		)
+		(pin "36"
+			(uuid "078a903d-570e-4271-a82b-3b7a208ddac8")
+		)
+		(pin "ESI1_5"
+			(uuid "91edfd4c-e72e-4328-88e0-8d99d51750dc")
+		)
+		(pin "33"
+			(uuid "bddc3471-d901-47a2-90ad-dd46cd0070ac")
+		)
+		(pin "ESI1_11"
+			(uuid "6d30d503-17bd-4e0f-b50b-947f72497f10")
+		)
+		(pin "ESI1_7"
+			(uuid "7c1c88c6-d761-493d-b916-91d66c4f97a7")
+		)
+		(pin "ESI1_2"
+			(uuid "a2759d11-99ff-43a1-afb9-438521081220")
+		)
+		(pin "ESI1_3"
+			(uuid "34786538-642c-42ce-97b5-b320e7b5d46c")
+		)
+		(pin "ESI1_9"
+			(uuid "d20add3b-74d3-4fdc-9019-49cf50610bf8")
+		)
+		(pin "ESI1_16"
+			(uuid "6ec79de2-8b5e-428d-957c-e6d38363effb")
+		)
+		(pin "ESI1_12"
+			(uuid "93de64c7-4680-4ffb-84af-ae6117e7ac10")
+		)
+		(pin "ESI1_4"
+			(uuid "1f794652-ac59-4f1e-8e2c-b7b496c0c012")
+		)
+		(pin "ESI1_13"
+			(uuid "b3c22038-d818-472d-a12f-03649d06c432")
+		)
+		(pin "39"
+			(uuid "b6e9f8c4-5990-4ab1-bcbe-93ea845d253a")
+		)
+		(pin "34"
+			(uuid "c7b65fd8-ac15-43e9-95a5-e667346a62e9")
+		)
+		(pin "38"
+			(uuid "1815595e-8b71-4536-a928-f3c06e0a9ccb")
+		)
+		(pin "ESI1_15"
+			(uuid "244d040a-ad68-44b5-891d-d5c3439143d2")
+		)
+		(pin "ESI1_6"
+			(uuid "f5a5e037-3548-411a-98d6-89a50c9b7406")
+		)
+		(pin "ESI1_10"
+			(uuid "16861e18-bead-4f11-a036-e816429d62ed")
+		)
+		(pin "ESI1_14"
+			(uuid "54f61946-98bc-4d88-9743-1067927392c5")
+		)
+		(instances
+			(project ""
+				(path "/dc96f6e8-dad3-49e6-9dc9-d1c2d511a6a9"
+					(reference "U1")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 69.85 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6ed913d-e833-4ab2-8702-02ea75effedb")
+		(property "Reference" "#PWR02"
+			(at 69.85 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 69.85 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 69.85 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "159749ba-51c7-4c62-a888-4f6c4b90e643")
+		)
+		(instances
+			(project ""
+				(path "/dc96f6e8-dad3-49e6-9dc9-d1c2d511a6a9"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MSP-EXP430FR6989:MSP-EXP430FR6989")
+		(at 144.78 64.77 0)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ddb3d57e-afd9-40b0-9f27-23886e917aec")
+		(property "Reference" "U1"
+			(at 161.29 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MSP-EXP430FR6989"
+			(at 161.29 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MSP-EXP430FR6989:MODULE_MSP-EXP430FR6989"
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Texas Instruments"
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/MSP-EXP430FR6989/Texas+Instruments/view-part/?ref=eda"
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "1.1"
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/MSP-EXP430FR6989/Texas+Instruments/view-part/?ref=snap"
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "MSP-EXP430FR6989"
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "MSP430FR6989 LaunchPad™ development kit"
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Texas Instruments"
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "15"
+			(uuid "da513577-6c83-4c0a-84b8-0d7f8716412c")
+		)
+		(pin "3"
+			(uuid "a8f98096-eb78-4eb8-9788-7d22e1367d25")
+		)
+		(pin "16"
+			(uuid "fd361583-b850-4e9f-b52f-e96599a5234a")
+		)
+		(pin "25"
+			(uuid "93c26701-05b9-4b75-aa24-4b126da0a432")
+		)
+		(pin "8"
+			(uuid "c4605bc7-0037-43b0-9708-299faecb59f8")
+		)
+		(pin "17"
+			(uuid "d64f1130-fb70-4a93-846b-bd8983e8ce9f")
+		)
+		(pin "7"
+			(uuid "0937b454-f462-4dc2-b427-d249c18e4fc7")
+		)
+		(pin "40"
+			(uuid "8e3c4bd9-c203-4d9d-89da-2d364fdaf7c7")
+		)
+		(pin "38"
+			(uuid "34fba7ab-83cc-4a46-b495-6419accb5452")
+		)
+		(pin "6"
+			(uuid "8bcb15f1-d014-43c9-adcd-595b047c3a0a")
+		)
+		(pin "5"
+			(uuid "d58bb88b-1349-4ae5-8bd1-e81f314441dc")
+		)
+		(pin "14"
+			(uuid "3a4c1efa-adc5-4765-923a-e24129a1eee2")
+		)
+		(pin "19"
+			(uuid "18926b6d-260b-4975-9212-a293166ee66f")
+		)
+		(pin "13"
+			(uuid "1dfe3931-ae1f-4500-92e1-a1edf76177ba")
+		)
+		(pin "30"
+			(uuid "15fa7654-5221-4f1f-8d4f-cb2c3ff9307c")
+		)
+		(pin "1"
+			(uuid "b970b58f-e0d4-4144-a7d0-8cacabeff26f")
+		)
+		(pin "2"
+			(uuid "3a6623f0-1c7d-4438-8784-85cdf4c8a38e")
+		)
+		(pin "18"
+			(uuid "943c203e-f33e-41ef-9a0a-53dfcaf12027")
+		)
+		(pin "11"
+			(uuid "9e4cdef5-eb2d-4215-8d74-4dc1bd14de4c")
+		)
+		(pin "9"
+			(uuid "2b352ca3-e985-4452-bed9-6019fed5c913")
+		)
+		(pin "12"
+			(uuid "40c6976b-aa9a-46ba-84cf-22194f4cc7db")
+		)
+		(pin "23"
+			(uuid "fb3ea441-12f9-4674-bfbf-aba7a1f921d9")
+		)
+		(pin "4"
+			(uuid "d9e9e73f-9aea-4b08-96ca-c9165c2a9eeb")
+		)
+		(pin "20"
+			(uuid "ca2bd592-7f54-4972-8c27-cba9a0b04475")
+		)
+		(pin "10"
+			(uuid "36fb9a5f-d2e4-4952-a8dc-77caa481fe5a")
+		)
+		(pin "21"
+			(uuid "4871fc39-051f-4d7e-87b4-82c74863e01b")
+		)
+		(pin "22"
+			(uuid "70f6694e-cf25-4c64-8275-02c1d78d738c")
+		)
+		(pin "24"
+			(uuid "fd04e333-4726-4521-a5e1-82c0aa6b1912")
+		)
+		(pin "26"
+			(uuid "07a1d51d-1f7a-4f76-a10a-23303fc49cd0")
+		)
+		(pin "27"
+			(uuid "7255f936-d8ef-44c6-a282-d31cf50893b8")
+		)
+		(pin "28"
+			(uuid "c159f018-91a9-4d88-ae60-077607c29b3c")
+		)
+		(pin "29"
+			(uuid "78bd858f-39c8-473a-92d9-c7297916021a")
+		)
+		(pin "39"
+			(uuid "a01c5665-73a1-48f7-9820-68da3184e404")
+		)
+		(pin "ESI1_9"
+			(uuid "04d599bf-9779-415a-9482-b3291a4ef32f")
+		)
+		(pin "ESI1_8"
+			(uuid "41e9eb19-4161-4725-8450-bf8c729b6441")
+		)
+		(pin "34"
+			(uuid "cb00ee44-846f-4ae1-ab70-e95aa2e65788")
+		)
+		(pin "ESI1_5"
+			(uuid "91980e0f-b9dd-4bfb-b6ac-58724000d9f2")
+		)
+		(pin "32"
+			(uuid "81124244-e849-4673-afaf-82ba11466df8")
+		)
+		(pin "ESI1_11"
+			(uuid "b140778b-66c6-459f-94c4-c3ce7476d198")
+		)
+		(pin "ESI1_15"
+			(uuid "b06824d1-e3a3-4ff0-b06e-38f3554ae40b")
+		)
+		(pin "35"
+			(uuid "5d5aac4d-9d54-418f-9a79-52b1b27362bb")
+		)
+		(pin "ESI1_2"
+			(uuid "f519ddfe-2d9f-41e6-a13b-b08826a24046")
+		)
+		(pin "37"
+			(uuid "7e866a69-08c3-4b05-83f2-29b5903795fc")
+		)
+		(pin "33"
+			(uuid "9c7fa3c8-b67d-4f4c-a6d7-af7b171dcd88")
+		)
+		(pin "ESI1_3"
+			(uuid "293a0ba4-ef1c-424b-95b5-d7de28f9d021")
+		)
+		(pin "ESI1_13"
+			(uuid "ba6951e6-298b-48ba-ade1-974b43910b07")
+		)
+		(pin "31"
+			(uuid "483082ca-5f9c-44dd-b196-163e013fc788")
+		)
+		(pin "ESI1_1"
+			(uuid "4d17cbfb-8d9d-4fd0-9812-94c46a372a9d")
+		)
+		(pin "ESI1_10"
+			(uuid "58d65452-1b96-4975-8ab1-b001a0adc47a")
+		)
+		(pin "ESI1_7"
+			(uuid "e4718c1b-b760-4778-94fe-843cce942af1")
+		)
+		(pin "ESI1_12"
+			(uuid "97a45e79-1ef7-4300-9c77-d403259a9efe")
+		)
+		(pin "ESI1_6"
+			(uuid "61055c7d-9461-4f37-8623-844564c73dd3")
+		)
+		(pin "ESI1_4"
+			(uuid "9a080f98-6e12-48af-bf69-28180a05fd6e")
+		)
+		(pin "ESI1_14"
+			(uuid "07823dc9-a1e4-40f6-bd06-88fac805135f")
+		)
+		(pin "ESI1_16"
+			(uuid "cb0d4a1f-e068-403a-9c7c-855f9f201968")
+		)
+		(pin "36"
+			(uuid "55efca9a-3f63-415b-beca-ecf9b9cc44fb")
+		)
+		(instances
+			(project ""
+				(path "/dc96f6e8-dad3-49e6-9dc9-d1c2d511a6a9"
+					(reference "U1")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MSP-EXP430FR6989:MSP-EXP430FR6989")
+		(at 46.99 116.84 0)
+		(unit 5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea6ae4d6-70fb-41c4-8a9c-7baaeaa8fc84")
+		(property "Reference" "U1"
+			(at 46.99 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MSP-EXP430FR6989"
+			(at 46.99 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MSP-EXP430FR6989:MODULE_MSP-EXP430FR6989"
+			(at 46.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 46.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Texas Instruments"
+			(at 46.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 46.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 46.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 46.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/MSP-EXP430FR6989/Texas+Instruments/view-part/?ref=eda"
+			(at 46.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 46.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "1.1"
+			(at 46.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/MSP-EXP430FR6989/Texas+Instruments/view-part/?ref=snap"
+			(at 46.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "MSP-EXP430FR6989"
+			(at 46.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "MSP430FR6989 LaunchPad™ development kit"
+			(at 46.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 46.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Texas Instruments"
+			(at 46.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "15"
+			(uuid "da513577-6c83-4c0a-84b8-0d7f8716412d")
+		)
+		(pin "3"
+			(uuid "a8f98096-eb78-4eb8-9788-7d22e1367d26")
+		)
+		(pin "16"
+			(uuid "fd361583-b850-4e9f-b52f-e96599a5234b")
+		)
+		(pin "25"
+			(uuid "93c26701-05b9-4b75-aa24-4b126da0a433")
+		)
+		(pin "8"
+			(uuid "c4605bc7-0037-43b0-9708-299faecb59f9")
+		)
+		(pin "17"
+			(uuid "d64f1130-fb70-4a93-846b-bd8983e8cea0")
+		)
+		(pin "7"
+			(uuid "0937b454-f462-4dc2-b427-d249c18e4fc8")
+		)
+		(pin "40"
+			(uuid "8e3c4bd9-c203-4d9d-89da-2d364fdaf7c8")
+		)
+		(pin "38"
+			(uuid "34fba7ab-83cc-4a46-b495-6419accb5453")
+		)
+		(pin "6"
+			(uuid "8bcb15f1-d014-43c9-adcd-595b047c3a0b")
+		)
+		(pin "5"
+			(uuid "d58bb88b-1349-4ae5-8bd1-e81f314441dd")
+		)
+		(pin "14"
+			(uuid "3a4c1efa-adc5-4765-923a-e24129a1eee3")
+		)
+		(pin "19"
+			(uuid "18926b6d-260b-4975-9212-a293166ee670")
+		)
+		(pin "13"
+			(uuid "1dfe3931-ae1f-4500-92e1-a1edf76177bb")
+		)
+		(pin "30"
+			(uuid "15fa7654-5221-4f1f-8d4f-cb2c3ff9307d")
+		)
+		(pin "1"
+			(uuid "b970b58f-e0d4-4144-a7d0-8cacabeff270")
+		)
+		(pin "2"
+			(uuid "3a6623f0-1c7d-4438-8784-85cdf4c8a38f")
+		)
+		(pin "18"
+			(uuid "943c203e-f33e-41ef-9a0a-53dfcaf12028")
+		)
+		(pin "11"
+			(uuid "9e4cdef5-eb2d-4215-8d74-4dc1bd14de4d")
+		)
+		(pin "9"
+			(uuid "2b352ca3-e985-4452-bed9-6019fed5c914")
+		)
+		(pin "12"
+			(uuid "40c6976b-aa9a-46ba-84cf-22194f4cc7dc")
+		)
+		(pin "23"
+			(uuid "fb3ea441-12f9-4674-bfbf-aba7a1f921da")
+		)
+		(pin "4"
+			(uuid "d9e9e73f-9aea-4b08-96ca-c9165c2a9eec")
+		)
+		(pin "20"
+			(uuid "ca2bd592-7f54-4972-8c27-cba9a0b04476")
+		)
+		(pin "10"
+			(uuid "36fb9a5f-d2e4-4952-a8dc-77caa481fe5b")
+		)
+		(pin "21"
+			(uuid "4871fc39-051f-4d7e-87b4-82c74863e01c")
+		)
+		(pin "22"
+			(uuid "70f6694e-cf25-4c64-8275-02c1d78d738d")
+		)
+		(pin "24"
+			(uuid "fd04e333-4726-4521-a5e1-82c0aa6b1913")
+		)
+		(pin "26"
+			(uuid "07a1d51d-1f7a-4f76-a10a-23303fc49cd1")
+		)
+		(pin "27"
+			(uuid "7255f936-d8ef-44c6-a282-d31cf50893b9")
+		)
+		(pin "28"
+			(uuid "c159f018-91a9-4d88-ae60-077607c29b3d")
+		)
+		(pin "29"
+			(uuid "78bd858f-39c8-473a-92d9-c7297916021b")
+		)
+		(pin "39"
+			(uuid "a01c5665-73a1-48f7-9820-68da3184e405")
+		)
+		(pin "ESI1_9"
+			(uuid "04d599bf-9779-415a-9482-b3291a4ef330")
+		)
+		(pin "ESI1_8"
+			(uuid "41e9eb19-4161-4725-8450-bf8c729b6442")
+		)
+		(pin "34"
+			(uuid "cb00ee44-846f-4ae1-ab70-e95aa2e65789")
+		)
+		(pin "ESI1_5"
+			(uuid "91980e0f-b9dd-4bfb-b6ac-58724000d9f3")
+		)
+		(pin "32"
+			(uuid "81124244-e849-4673-afaf-82ba11466df9")
+		)
+		(pin "ESI1_11"
+			(uuid "b140778b-66c6-459f-94c4-c3ce7476d199")
+		)
+		(pin "ESI1_15"
+			(uuid "b06824d1-e3a3-4ff0-b06e-38f3554ae40c")
+		)
+		(pin "35"
+			(uuid "5d5aac4d-9d54-418f-9a79-52b1b27362bc")
+		)
+		(pin "ESI1_2"
+			(uuid "f519ddfe-2d9f-41e6-a13b-b08826a24047")
+		)
+		(pin "37"
+			(uuid "7e866a69-08c3-4b05-83f2-29b5903795fd")
+		)
+		(pin "33"
+			(uuid "9c7fa3c8-b67d-4f4c-a6d7-af7b171dcd89")
+		)
+		(pin "ESI1_3"
+			(uuid "293a0ba4-ef1c-424b-95b5-d7de28f9d022")
+		)
+		(pin "ESI1_13"
+			(uuid "ba6951e6-298b-48ba-ade1-974b43910b08")
+		)
+		(pin "31"
+			(uuid "483082ca-5f9c-44dd-b196-163e013fc789")
+		)
+		(pin "ESI1_1"
+			(uuid "4d17cbfb-8d9d-4fd0-9812-94c46a372a9e")
+		)
+		(pin "ESI1_10"
+			(uuid "58d65452-1b96-4975-8ab1-b001a0adc47b")
+		)
+		(pin "ESI1_7"
+			(uuid "e4718c1b-b760-4778-94fe-843cce942af2")
+		)
+		(pin "ESI1_12"
+			(uuid "97a45e79-1ef7-4300-9c77-d403259a9eff")
+		)
+		(pin "ESI1_6"
+			(uuid "61055c7d-9461-4f37-8623-844564c73dd4")
+		)
+		(pin "ESI1_4"
+			(uuid "9a080f98-6e12-48af-bf69-28180a05fd6f")
+		)
+		(pin "ESI1_14"
+			(uuid "07823dc9-a1e4-40f6-bd06-88fac8051360")
+		)
+		(pin "ESI1_16"
+			(uuid "cb0d4a1f-e068-403a-9c7c-855f9f201969")
+		)
+		(pin "36"
+			(uuid "55efca9a-3f63-415b-beca-ecf9b9cc44fc")
+		)
+		(instances
+			(project ""
+				(path "/dc96f6e8-dad3-49e6-9dc9-d1c2d511a6a9"
+					(reference "U1")
+					(unit 5)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

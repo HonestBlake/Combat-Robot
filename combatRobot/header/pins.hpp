@@ -8,7 +8,8 @@ namespace combatRobot::pins{ // #scope: pins
     constexpr std::uint8_t MAX_PWM_DUTY_CYCLE = 100; // Maximum duty cycle percentage
     constexpr std::uint8_t MIN_PWM_DUTY_CYCLE = 0; // Minimum duty cycle percentage
     constexpr std::uint32_t MIN_PWM_FREQUENCY = 100; // Minimum frequency in Hz
-
+    constexpr float VCC = 3.3f; // Supply voltage for ADC reference
+    constexpr std::uint16_t ADC12_MAX_VALUE = 4095; // Maximum value for 12-bit ADC
     // #enum: Mode, Enum Class
     enum class Mode: std::uint8_t{ 
         OUTPUT, 
@@ -22,6 +23,12 @@ namespace combatRobot::pins{ // #scope: pins
     enum class State: bool{ 
         HIGH = 1, 
         LOW = 0 
+    };
+
+    // #enum: Pull, Enum Class
+    enum class Pull: bool{
+        UP = 1,
+        DOWN = 0
     };
 
     // #enum: Port, Enum Class
@@ -40,10 +47,12 @@ namespace combatRobot::pins{ // #scope: pins
 
     // #namespace: port
     namespace port{
-        volatile std::uint8_t& getDirectionRegister(const Port p_port);
-        volatile std::uint8_t& getOutputRegister(const Port p_port);
-        volatile std::uint8_t& getSelect0Register(const Port p_port);
-        volatile std::uint8_t& getSelect1Register(const Port p_port);
+        volatile std::uint8_t& directionRegister(const Port p_port);
+        volatile std::uint8_t& outputRegister(const Port p_port);
+        volatile std::uint8_t& inputRegister(const Port p_port);
+        volatile std::uint8_t& pullRegister(const Port p_port);
+        volatile std::uint8_t& select0Register(const Port p_port);
+        volatile std::uint8_t& select1Register(const Port p_port);
         bool isPort1(const Port p_port);
         bool isPort2(const Port p_port);
         bool isPort3(const Port p_port);
@@ -54,18 +63,19 @@ namespace combatRobot::pins{ // #scope: pins
         bool isPort8(const Port p_port);
         bool isPort9(const Port p_port);
         bool isPort10(const Port p_port);
-        std::uint8_t getPort1BitMask(const Port p_port);
-        std::uint8_t getPort2BitMask(const Port p_port);
-        std::uint8_t getPort3BitMask(const Port p_port);
-        std::uint8_t getPort4BitMask(const Port p_port);
-        std::uint8_t getPort5BitMask(const Port p_port);
-        std::uint8_t getPort6BitMask(const Port p_port);
-        std::uint8_t getPort7BitMask(const Port p_port);
-        std::uint8_t getPort8BitMask(const Port p_port);
-        std::uint8_t getPort9BitMask(const Port p_port);
-        std::uint8_t getPort10BitMask(const Port p_port);
-        std::uint8_t getBitMask(const Port p_port); 
-        std::uint16_t getTimerClearBitMask(Port p_port);
+        std::uint8_t port1BitMask(const Port p_port);
+        std::uint8_t port2BitMask(const Port p_port);
+        std::uint8_t port3BitMask(const Port p_port);
+        std::uint8_t port4BitMask(const Port p_port);
+        std::uint8_t port5BitMask(const Port p_port);
+        std::uint8_t port6BitMask(const Port p_port);
+        std::uint8_t port7BitMask(const Port p_port);
+        std::uint8_t port8BitMask(const Port p_port);
+        std::uint8_t port9BitMask(const Port p_port);
+        std::uint8_t port10BitMask(const Port p_port);
+        std::uint8_t bitMask(const Port p_port); 
+        std::uint16_t timerClearBitMask(Port p_port);
+        std::uint16_t adcChannel(const Port p_port);
     }; // #end: port
 
     // #class: Pin<Mode::OUTPUT>
@@ -88,7 +98,22 @@ namespace combatRobot::pins{ // #scope: pins
 
     // #class: Pin<Mode::INPUT>
     template<> class Pin<Mode::INPUT> final{
-        // Todo later
+    public:
+    // Public factory methods
+        Pin(const Port p_port);
+        Pin(const Port p_port, const Pull p_state);
+    // Public Operators
+        explicit operator bool()const;
+        bool operator!()const;
+    // Public methods
+        State read()const;
+        const Pin<Mode::INPUT>& pull(const Pull p_pull);
+    private:
+    // Private static Methods
+        static void setInput(const Port p_port);
+        static void enablePull(const Port p_port);
+    // Private Members
+        Port m_port;
     }; // #end: Pin<Mode::INPUT>
 
     // #class: Pin<Mode::PWM>
@@ -101,7 +126,8 @@ namespace combatRobot::pins{ // #scope: pins
     // Public Methods
         Pin<Mode::PWM>& frequency(const std::uint32_t p_frequency);
         Pin<Mode::PWM>& dutyCycle(const std::uint8_t p_dutyCycle);
-        Pin<Mode::PWM>& start();
+        Pin<Mode::PWM>& enable();
+        Pin<Mode::PWM>& disable();
         Pin<Mode::PWM>& stop();
     private:
     // Private Static Methods
@@ -119,13 +145,20 @@ namespace combatRobot::pins{ // #scope: pins
 
     // #class: Pin<Mode::ANALOG>
     template<> class Pin<Mode::ANALOG> final{
-        // Todo later
+    public:
+    // Public Factory Methods
+        Pin<Mode::ANALOG>(const Port p_port);
+    // Public Methods
+        std::uint16_t readRaw()const;
+        float read()const;
+    private:
+    // Private Static Methods
+        static void setAnalog(const Port p_port);
+        static void clearENC();
+        static void configureADC();
+    // Private Members
+        Port m_port;
     }; // #end: Pin<Mode::ANALOG>
-
-    // #class: Pin<Mode::TIME_CAPTURE>
-    template<> class Pin<Mode::TIME_CAPTURE> final{
-        // Todo later
-    }; // #end: Pin<Mode::TIME_CAPTURE>
 
     // // #class: Pin
     // class Pin final{

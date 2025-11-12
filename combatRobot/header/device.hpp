@@ -12,10 +12,8 @@ namespace combatRobot::device{ // #namespace: device
     // Public Static Methods
         static void delay(const std::uint16_t p_milliseconds);
         static void raiseError();
-    private:
-    // Private Methods
-        void stopWDT();
-        void enableGPIO();
+        static void stopWDT();
+        static void enableGPIO();
     }; // #end: Device
 
 } // #end: device

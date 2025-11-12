@@ -149,6 +149,32 @@ CoreRobotHex/fast:
 	$(MAKE) $(MAKESILENT) -f combatRobot/coreRobot/CMakeFiles/CoreRobotHex.dir/build.make combatRobot/coreRobot/CMakeFiles/CoreRobotHex.dir/build
 .PHONY : CoreRobotHex/fast
 
+#=============================================================================
+# Target rules for targets named RemoteController
+
+# Build rule for target.
+RemoteController: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RemoteController
+.PHONY : RemoteController
+
+# fast build rule for target.
+RemoteController/fast:
+	$(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/build
+.PHONY : RemoteController/fast
+
+#=============================================================================
+# Target rules for targets named RemoteControllerHex
+
+# Build rule for target.
+RemoteControllerHex: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RemoteControllerHex
+.PHONY : RemoteControllerHex
+
+# fast build rule for target.
+RemoteControllerHex/fast:
+	$(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/build
+.PHONY : RemoteControllerHex/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,7 +185,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CoreRobotHex"
+	@echo "... RemoteControllerHex"
 	@echo "... CoreRobot"
+	@echo "... RemoteController"
 .PHONY : help
 
 

@@ -59,7 +59,12 @@
 					},
 					"parentIndex" : 1,
 					"projectIndex" : 0,
-					"source" : "combatRobot/remoteController"
+					"source" : "combatRobot/remoteController",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
 				}
 			],
 			"name" : "Debug",
@@ -77,7 +82,9 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2,
+						3
 					]
 				}
 			],
@@ -95,6 +102,20 @@
 					"id" : "CoreRobotHex::@1282256927556db61424",
 					"jsonFile" : "target-CoreRobotHex-Debug-369384c8540d1433a945.json",
 					"name" : "CoreRobotHex",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "RemoteController::@0ad0141c9072a7bc51f2",
+					"jsonFile" : "target-RemoteController-Debug-d4bfb784c616fea2d2aa.json",
+					"name" : "RemoteController",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "RemoteControllerHex::@0ad0141c9072a7bc51f2",
+					"jsonFile" : "target-RemoteControllerHex-Debug-ee7a326335d0a6c3f5c6.json",
+					"name" : "RemoteControllerHex",
 					"projectIndex" : 0
 				}
 			]

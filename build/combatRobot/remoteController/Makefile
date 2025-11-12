@@ -123,6 +123,178 @@ depend:
 	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+combatRobot/remoteController/CMakeFiles/RemoteController.dir/rule:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 combatRobot/remoteController/CMakeFiles/RemoteController.dir/rule
+.PHONY : combatRobot/remoteController/CMakeFiles/RemoteController.dir/rule
+
+# Convenience name for target.
+RemoteController: combatRobot/remoteController/CMakeFiles/RemoteController.dir/rule
+.PHONY : RemoteController
+
+# fast build rule for target.
+RemoteController/fast:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/build
+.PHONY : RemoteController/fast
+
+# Convenience name for target.
+combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/rule:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/rule
+.PHONY : combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/rule
+
+# Convenience name for target.
+RemoteControllerHex: combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/rule
+.PHONY : RemoteControllerHex
+
+# fast build rule for target.
+RemoteControllerHex/fast:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/build
+.PHONY : RemoteControllerHex/fast
+
+__/source/device.obj: __/source/device.cpp.obj
+.PHONY : __/source/device.obj
+
+# target to build an object file
+__/source/device.cpp.obj:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/__/source/device.cpp.obj
+.PHONY : __/source/device.cpp.obj
+
+__/source/device.i: __/source/device.cpp.i
+.PHONY : __/source/device.i
+
+# target to preprocess a source file
+__/source/device.cpp.i:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/__/source/device.cpp.i
+.PHONY : __/source/device.cpp.i
+
+__/source/device.s: __/source/device.cpp.s
+.PHONY : __/source/device.s
+
+# target to generate assembly for a file
+__/source/device.cpp.s:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/__/source/device.cpp.s
+.PHONY : __/source/device.cpp.s
+
+__/source/ir.obj: __/source/ir.cpp.obj
+.PHONY : __/source/ir.obj
+
+# target to build an object file
+__/source/ir.cpp.obj:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/__/source/ir.cpp.obj
+.PHONY : __/source/ir.cpp.obj
+
+__/source/ir.i: __/source/ir.cpp.i
+.PHONY : __/source/ir.i
+
+# target to preprocess a source file
+__/source/ir.cpp.i:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/__/source/ir.cpp.i
+.PHONY : __/source/ir.cpp.i
+
+__/source/ir.s: __/source/ir.cpp.s
+.PHONY : __/source/ir.s
+
+# target to generate assembly for a file
+__/source/ir.cpp.s:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/__/source/ir.cpp.s
+.PHONY : __/source/ir.cpp.s
+
+__/source/motors.obj: __/source/motors.cpp.obj
+.PHONY : __/source/motors.obj
+
+# target to build an object file
+__/source/motors.cpp.obj:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/__/source/motors.cpp.obj
+.PHONY : __/source/motors.cpp.obj
+
+__/source/motors.i: __/source/motors.cpp.i
+.PHONY : __/source/motors.i
+
+# target to preprocess a source file
+__/source/motors.cpp.i:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/__/source/motors.cpp.i
+.PHONY : __/source/motors.cpp.i
+
+__/source/motors.s: __/source/motors.cpp.s
+.PHONY : __/source/motors.s
+
+# target to generate assembly for a file
+__/source/motors.cpp.s:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/__/source/motors.cpp.s
+.PHONY : __/source/motors.cpp.s
+
+__/source/pins.obj: __/source/pins.cpp.obj
+.PHONY : __/source/pins.obj
+
+# target to build an object file
+__/source/pins.cpp.obj:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/__/source/pins.cpp.obj
+.PHONY : __/source/pins.cpp.obj
+
+__/source/pins.i: __/source/pins.cpp.i
+.PHONY : __/source/pins.i
+
+# target to preprocess a source file
+__/source/pins.cpp.i:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/__/source/pins.cpp.i
+.PHONY : __/source/pins.cpp.i
+
+__/source/pins.s: __/source/pins.cpp.s
+.PHONY : __/source/pins.s
+
+# target to generate assembly for a file
+__/source/pins.cpp.s:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/__/source/pins.cpp.s
+.PHONY : __/source/pins.cpp.s
+
+main.obj: main.cpp.obj
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+source/remote.obj: source/remote.cpp.obj
+.PHONY : source/remote.obj
+
+# target to build an object file
+source/remote.cpp.obj:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/source/remote.cpp.obj
+.PHONY : source/remote.cpp.obj
+
+source/remote.i: source/remote.cpp.i
+.PHONY : source/remote.i
+
+# target to preprocess a source file
+source/remote.cpp.i:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/source/remote.cpp.i
+.PHONY : source/remote.cpp.i
+
+source/remote.s: source/remote.cpp.s
+.PHONY : source/remote.s
+
+# target to generate assembly for a file
+source/remote.cpp.s:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/source/remote.cpp.s
+.PHONY : source/remote.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -132,6 +304,26 @@ help:
 	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... RemoteControllerHex"
+	@echo "... RemoteController"
+	@echo "... __/source/device.obj"
+	@echo "... __/source/device.i"
+	@echo "... __/source/device.s"
+	@echo "... __/source/ir.obj"
+	@echo "... __/source/ir.i"
+	@echo "... __/source/ir.s"
+	@echo "... __/source/motors.obj"
+	@echo "... __/source/motors.i"
+	@echo "... __/source/motors.s"
+	@echo "... __/source/pins.obj"
+	@echo "... __/source/pins.i"
+	@echo "... __/source/pins.s"
+	@echo "... main.obj"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... source/remote.obj"
+	@echo "... source/remote.i"
+	@echo "... source/remote.s"
 .PHONY : help
 
 

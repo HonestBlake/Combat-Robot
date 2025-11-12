@@ -51,4 +51,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "combatRobot/coreRobot/CMakeFiles/CoreRobot.dir/DependInfo.cmake"
   "combatRobot/coreRobot/CMakeFiles/CoreRobotHex.dir/DependInfo.cmake"
+  "combatRobot/remoteController/CMakeFiles/RemoteController.dir/DependInfo.cmake"
+  "combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/DependInfo.cmake"
   )

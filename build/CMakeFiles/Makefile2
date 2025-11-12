@@ -127,11 +127,13 @@ combatRobot/coreRobot/clean: combatRobot/coreRobot/CMakeFiles/CoreRobotHex.dir/c
 # Directory level rules for directory combatRobot/remoteController
 
 # Recursive "all" directory target.
-combatRobot/remoteController/all:
+combatRobot/remoteController/all: combatRobot/remoteController/CMakeFiles/RemoteController.dir/all
+combatRobot/remoteController/all: combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/all
 .PHONY : combatRobot/remoteController/all
 
 # Recursive "codegen" directory target.
-combatRobot/remoteController/codegen:
+combatRobot/remoteController/codegen: combatRobot/remoteController/CMakeFiles/RemoteController.dir/codegen
+combatRobot/remoteController/codegen: combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/codegen
 .PHONY : combatRobot/remoteController/codegen
 
 # Recursive "preinstall" directory target.
@@ -139,7 +141,8 @@ combatRobot/remoteController/preinstall:
 .PHONY : combatRobot/remoteController/preinstall
 
 # Recursive "clean" directory target.
-combatRobot/remoteController/clean:
+combatRobot/remoteController/clean: combatRobot/remoteController/CMakeFiles/RemoteController.dir/clean
+combatRobot/remoteController/clean: combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/clean
 .PHONY : combatRobot/remoteController/clean
 
 #=============================================================================
@@ -205,6 +208,70 @@ combatRobot/coreRobot/CMakeFiles/CoreRobotHex.dir/codegen: combatRobot/coreRobot
 combatRobot/coreRobot/CMakeFiles/CoreRobotHex.dir/clean:
 	$(MAKE) $(MAKESILENT) -f combatRobot/coreRobot/CMakeFiles/CoreRobotHex.dir/build.make combatRobot/coreRobot/CMakeFiles/CoreRobotHex.dir/clean
 .PHONY : combatRobot/coreRobot/CMakeFiles/CoreRobotHex.dir/clean
+
+#=============================================================================
+# Target rules for target combatRobot/remoteController/CMakeFiles/RemoteController.dir
+
+# All Build rule for target.
+combatRobot/remoteController/CMakeFiles/RemoteController.dir/all:
+	$(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/depend
+	$(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles" --progress-num=9,10,11,12,13,14,15 "Built target RemoteController"
+.PHONY : combatRobot/remoteController/CMakeFiles/RemoteController.dir/all
+
+# Build rule for subdir invocation for target.
+combatRobot/remoteController/CMakeFiles/RemoteController.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles" 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 combatRobot/remoteController/CMakeFiles/RemoteController.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles" 0
+.PHONY : combatRobot/remoteController/CMakeFiles/RemoteController.dir/rule
+
+# Convenience name for target.
+RemoteController: combatRobot/remoteController/CMakeFiles/RemoteController.dir/rule
+.PHONY : RemoteController
+
+# codegen rule for target.
+combatRobot/remoteController/CMakeFiles/RemoteController.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles" --progress-num=9,10,11,12,13,14,15 "Finished codegen for target RemoteController"
+.PHONY : combatRobot/remoteController/CMakeFiles/RemoteController.dir/codegen
+
+# clean rule for target.
+combatRobot/remoteController/CMakeFiles/RemoteController.dir/clean:
+	$(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/clean
+.PHONY : combatRobot/remoteController/CMakeFiles/RemoteController.dir/clean
+
+#=============================================================================
+# Target rules for target combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir
+
+# All Build rule for target.
+combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/all: combatRobot/remoteController/CMakeFiles/RemoteController.dir/all
+	$(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/depend
+	$(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles" --progress-num=16 "Built target RemoteControllerHex"
+.PHONY : combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/all
+
+# Build rule for subdir invocation for target.
+combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles" 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles" 0
+.PHONY : combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/rule
+
+# Convenience name for target.
+RemoteControllerHex: combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/rule
+.PHONY : RemoteControllerHex
+
+# codegen rule for target.
+combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/codegen: combatRobot/remoteController/CMakeFiles/RemoteController.dir/all
+	$(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:/Users/blake/School/Robotics Project Lab/Combat Robot/build/CMakeFiles" --progress-num=16 "Finished codegen for target RemoteControllerHex"
+.PHONY : combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/codegen
+
+# clean rule for target.
+combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/clean:
+	$(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/clean
+.PHONY : combatRobot/remoteController/CMakeFiles/RemoteControllerHex.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

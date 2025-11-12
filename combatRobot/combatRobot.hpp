@@ -12,7 +12,9 @@
 // #namespace: combatRobot
 namespace combatRobot{
 
-    constexpr std::uint32_t SMCLK = 1'000'000; // 1 MHz
+    inline namespace robotValues{
+        
+    } // #end: robotValues
 
     // #namespace: coreRobot
     inline namespace coreRobot{
@@ -51,3 +53,5 @@ namespace combatRobot{
 
 
 } // #end: combatRobot
+
+// #include "robotValues.hpp"

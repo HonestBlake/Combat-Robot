@@ -6,7 +6,7 @@ namespace combatRobot::motors{ // #scope: motors
 // Public Factory Methods
 
     Motor::Motor(Port p_in1, Port p_in2, Port p_enable): m_in1(Pin<Mode::OUTPUT>(p_in1)), m_in2(Pin<Mode::OUTPUT>(p_in2)), m_signal(Pin<Mode::PWM>(p_enable, MOTOR_PWM_FREQUENCY, MIN_PWM_DUTY_CYCLE)){
-        m_signal.start(); // Initialize PWM with 0% duty cycle (stopped) and start it
+        m_signal.enable(); // Initialize PWM with 0% duty cycle (stopped) and start it
     }
 
 // Public Methods

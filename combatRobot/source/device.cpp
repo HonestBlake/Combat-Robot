@@ -1,4 +1,5 @@
 #include "device.hpp" // Module header file
+#include "msp430fr6989.h"
 #include "pins.hpp"
 #include "motors.hpp"
 
@@ -24,8 +25,6 @@ namespace combatRobot::device{ // #scope: device
         }
     }
 
-// Private Methods
-
     void Device::stopWDT(){
         WDTCTL = WDTPW | WDTHOLD; // Stop watchdog timer
     }
@@ -34,6 +33,6 @@ namespace combatRobot::device{ // #scope: device
         PM5CTL0 &= ~LOCKLPM5; // Disable the GPIO power-on default high-impedance mode to activate previously configured port settings
     }
 
-} // #end: device
+} // #end: device`
 
 

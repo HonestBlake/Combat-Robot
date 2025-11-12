@@ -7,7 +7,7 @@
       "command": "MSP430Flasher",
       "args": [
         "-w",
-        "C:\\Users\\blake\\School\\Robotics Project Lab\\Combat Robot\\CoreRobot.hex",
+        "C:\\Users\\blake\\School\\Robotics Project Lab\\Combat Robot\\coreRobot.hex",
         "-v",
         "-g"
       ],
@@ -23,7 +23,7 @@
       "command": "MSP430Flasher",
       "args": [
         "-w",
-        "C:\\Users\\blake\\School\\Robotics Project Lab\\Combat Robot\\RemoteController.hex",
+        "C:\\Users\\blake\\School\\Robotics Project Lab\\Combat Robot\\remoteController.hex",
         "-v",
         "-g"
       ],

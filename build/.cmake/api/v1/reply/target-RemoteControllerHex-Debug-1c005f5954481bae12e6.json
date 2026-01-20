@@ -23,6 +23,11 @@
 			}
 		]
 	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
 	"dependencies" : 
 	[
 		{
@@ -31,6 +36,12 @@
 	],
 	"id" : "RemoteControllerHex::@0ad0141c9072a7bc51f2",
 	"name" : "RemoteControllerHex",
+	"orderDependencies" : 
+	[
+		{
+			"id" : "RemoteController::@0ad0141c9072a7bc51f2"
+		}
+	],
 	"paths" : 
 	{
 		"build" : "combatRobot/remoteController",

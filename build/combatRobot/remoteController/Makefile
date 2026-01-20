@@ -247,6 +247,30 @@ __/source/pins.cpp.s:
 	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/__/source/pins.cpp.s
 .PHONY : __/source/pins.cpp.s
 
+__/source/servo.obj: __/source/servo.cpp.obj
+.PHONY : __/source/servo.obj
+
+# target to build an object file
+__/source/servo.cpp.obj:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/__/source/servo.cpp.obj
+.PHONY : __/source/servo.cpp.obj
+
+__/source/servo.i: __/source/servo.cpp.i
+.PHONY : __/source/servo.i
+
+# target to preprocess a source file
+__/source/servo.cpp.i:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/__/source/servo.cpp.i
+.PHONY : __/source/servo.cpp.i
+
+__/source/servo.s: __/source/servo.cpp.s
+.PHONY : __/source/servo.s
+
+# target to generate assembly for a file
+__/source/servo.cpp.s:
+	cd "C:/Users/blake/School/Robotics Project Lab/Combat Robot/build" && $(MAKE) $(MAKESILENT) -f combatRobot/remoteController/CMakeFiles/RemoteController.dir/build.make combatRobot/remoteController/CMakeFiles/RemoteController.dir/__/source/servo.cpp.s
+.PHONY : __/source/servo.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -318,6 +342,9 @@ help:
 	@echo "... __/source/pins.obj"
 	@echo "... __/source/pins.i"
 	@echo "... __/source/pins.s"
+	@echo "... __/source/servo.obj"
+	@echo "... __/source/servo.i"
+	@echo "... __/source/servo.s"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"

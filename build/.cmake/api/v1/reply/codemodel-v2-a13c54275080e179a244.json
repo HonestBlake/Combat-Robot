@@ -2,6 +2,7 @@
 	"configurations" : 
 	[
 		{
+			"abstractTargets" : [],
 			"directories" : 
 			[
 				{
@@ -10,7 +11,7 @@
 					[
 						1
 					],
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Debug-f6f22219c74102c3da70.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "4.0.2"
@@ -25,7 +26,7 @@
 						2,
 						3
 					],
-					"jsonFile" : "directory-combatRobot-Debug-271a7761ef83ff72f7dd.json",
+					"jsonFile" : "directory-combatRobot-Debug-eb351789452b805be10c.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "4.0.2"
@@ -36,7 +37,7 @@
 				},
 				{
 					"build" : "combatRobot/coreRobot",
-					"jsonFile" : "directory-combatRobot.coreRobot-Debug-9d785fdd89fa5d58bc41.json",
+					"jsonFile" : "directory-combatRobot.coreRobot-Debug-35f6fb5b6090840071b5.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "4.0.2"
@@ -52,7 +53,7 @@
 				},
 				{
 					"build" : "combatRobot/remoteController",
-					"jsonFile" : "directory-combatRobot.remoteController-Debug-ecee6e5734a0695d0112.json",
+					"jsonFile" : "directory-combatRobot.remoteController-Debug-dbc530765abbe9ef6b85.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "4.0.2"
@@ -93,28 +94,28 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "CoreRobot::@1282256927556db61424",
-					"jsonFile" : "target-CoreRobot-Debug-09b76ee416bfb45a38c4.json",
+					"jsonFile" : "target-CoreRobot-Debug-15296ffc3fdce44b4901.json",
 					"name" : "CoreRobot",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "CoreRobotHex::@1282256927556db61424",
-					"jsonFile" : "target-CoreRobotHex-Debug-369384c8540d1433a945.json",
+					"jsonFile" : "target-CoreRobotHex-Debug-97b7fec5205718bd2c6e.json",
 					"name" : "CoreRobotHex",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "RemoteController::@0ad0141c9072a7bc51f2",
-					"jsonFile" : "target-RemoteController-Debug-d4bfb784c616fea2d2aa.json",
+					"jsonFile" : "target-RemoteController-Debug-c76a7eac8bf3beae4dac.json",
 					"name" : "RemoteController",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "RemoteControllerHex::@0ad0141c9072a7bc51f2",
-					"jsonFile" : "target-RemoteControllerHex-Debug-ee7a326335d0a6c3f5c6.json",
+					"jsonFile" : "target-RemoteControllerHex-Debug-1c005f5954481bae12e6.json",
 					"name" : "RemoteControllerHex",
 					"projectIndex" : 0
 				}
@@ -130,6 +131,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 8
+		"minor" : 9
 	}
 }

@@ -311,6 +311,143 @@ combatRobot/remoteController/CMakeFiles/RemoteController.dir/__/source/pins.cpp.
   c:/program\ files/ti/msp430-gcc/msp430-elf/include/sys/types.h \
   c:/program\ files/ti/msp430-gcc/msp430-elf/include/wchar.h
 
+combatRobot/remoteController/CMakeFiles/RemoteController.dir/__/source/servo.cpp.obj: C:/Users/blake/School/Robotics\ Project\ Lab/Combat\ Robot/combatRobot/source/servo.cpp \
+  C:/Users/blake/School/Robotics\ Project\ Lab/Combat\ Robot/combatRobot/combatRobot.hpp \
+  C:/Users/blake/School/Robotics\ Project\ Lab/Combat\ Robot/combatRobot/header/pins.hpp \
+  C:/Users/blake/School/Robotics\ Project\ Lab/Combat\ Robot/combatRobot/header/servo.hpp \
+  C:/Program\ Files/ti/msp430-GCC/include/in430.h \
+  C:/Program\ Files/ti/msp430-GCC/include/iomacros.h \
+  C:/Program\ Files/ti/msp430-GCC/include/msp430fr6989.h \
+  c:/program\ files/ti/msp430-gcc/lib/gcc/msp430-elf/9.3.1/include/stdarg.h \
+  c:/program\ files/ti/msp430-gcc/lib/gcc/msp430-elf/9.3.1/include/stddef.h \
+  c:/program\ files/ti/msp430-gcc/lib/gcc/msp430-elf/9.3.1/include/stdint.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/_ansi.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/_newlib_version.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/algorithm \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/array \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/backward/binders.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/algorithmfwd.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/alloc_traits.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/allocator.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/basic_string.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/basic_string.tcc \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/char_traits.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/concept_check.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/cpp_type_traits.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/cxxabi_forced.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/cxxabi_init_exception.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/enable_special_members.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/erase_if.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/exception.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/exception_defines.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/exception_ptr.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/functexcept.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/functional_hash.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/hash_bytes.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/hashtable.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/hashtable_policy.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/invoke.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/localefwd.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/memoryfwd.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/move.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/nested_exception.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/node_handle.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/ostream_insert.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/postypes.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/predefined_ops.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/ptr_traits.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/range_access.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/refwrap.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/std_abs.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/std_function.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/stl_algo.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/stl_algobase.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/stl_bvector.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/stl_construct.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/stl_function.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/stl_heap.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/stl_iterator.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/stl_iterator_base_funcs.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/stl_iterator_base_types.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/stl_pair.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/stl_relops.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/stl_tempbuf.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/stl_uninitialized.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/stl_vector.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/string_view.tcc \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/stringfwd.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/uniform_int_dist.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/unordered_map.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/uses_allocator.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/vector.tcc \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/cctype \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/cerrno \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/clocale \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/cstdint \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/cstdio \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/cstdlib \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/cwchar \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/debug/assertions.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/debug/debug.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/exception \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/ext/aligned_buffer.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/ext/alloc_traits.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/ext/atomicity.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/ext/new_allocator.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/ext/numeric_traits.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/ext/string_conversions.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/ext/type_traits.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/functional \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/initializer_list \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/iosfwd \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/limits \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/msp430-elf/bits/atomic_word.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/msp430-elf/bits/c++allocator.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/msp430-elf/bits/c++config.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/msp430-elf/bits/c++locale.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/msp430-elf/bits/cpu_defines.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/msp430-elf/bits/gthr-default.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/msp430-elf/bits/gthr.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/msp430-elf/bits/os_defines.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/new \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/optional \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/pstl/execution_defs.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/pstl/glue_algorithm_defs.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/pstl/pstl_config.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/stdexcept \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/string \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/string_view \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/tuple \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/type_traits \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/typeinfo \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/unordered_map \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/utility \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/vector \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/ctype.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/errno.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/locale.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/machine/_default_types.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/machine/_types.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/machine/ieeefp.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/machine/stdlib.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/machine/types.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/newlib.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/stdint.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/stdio.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/stdlib.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/sys/_intsup.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/sys/_stdint.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/sys/_types.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/sys/cdefs.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/sys/config.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/sys/errno.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/sys/features.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/sys/lock.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/sys/reent.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/sys/stdio.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/sys/types.h \
+  c:/program\ files/ti/msp430-gcc/msp430-elf/include/wchar.h
+
 combatRobot/remoteController/CMakeFiles/RemoteController.dir/main.cpp.obj: C:/Users/blake/School/Robotics\ Project\ Lab/Combat\ Robot/combatRobot/remoteController/main.cpp \
   C:/Users/blake/School/Robotics\ Project\ Lab/Combat\ Robot/combatRobot/combatRobot.hpp \
   C:/Users/blake/School/Robotics\ Project\ Lab/Combat\ Robot/combatRobot/header/device.hpp \
@@ -576,6 +713,8 @@ combatRobot/remoteController/CMakeFiles/RemoteController.dir/source/remote.cpp.o
   c:/program\ files/ti/msp430-gcc/msp430-elf/include/wchar.h
 
 
+c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/stl_bvector.h:
+
 C:/Users/blake/School/Robotics\ Project\ Lab/Combat\ Robot/combatRobot/source/device.cpp:
 
 c:/program\ files/ti/msp430-gcc/msp430-elf/include/sys/cdefs.h:
@@ -617,6 +756,8 @@ C:/Users/blake/School/Robotics\ Project\ Lab/Combat\ Robot/combatRobot/remoteCon
 C:/Program\ Files/ti/msp430-GCC/include/in430.h:
 
 c:/program\ files/ti/msp430-gcc/lib/gcc/msp430-elf/9.3.1/include/stddef.h:
+
+c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/stl_uninitialized.h:
 
 c:/program\ files/ti/msp430-gcc/lib/gcc/msp430-elf/9.3.1/include/stdint.h:
 
@@ -778,6 +919,8 @@ c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/initializer_list:
 
 c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/limits:
 
+c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/pstl/execution_defs.h:
+
 c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/msp430-elf/bits/atomic_word.h:
 
 c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/msp430-elf/bits/c++allocator.h:
@@ -789,6 +932,8 @@ c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/msp430-elf/bits/gth
 c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/msp430-elf/bits/gthr.h:
 
 c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/new:
+
+c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/std_function.h:
 
 c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/string:
 
@@ -849,3 +994,29 @@ c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/stdexcept:
 c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/tuple:
 
 c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/utility:
+
+C:/Users/blake/School/Robotics\ Project\ Lab/Combat\ Robot/combatRobot/source/servo.cpp:
+
+C:/Users/blake/School/Robotics\ Project\ Lab/Combat\ Robot/combatRobot/header/servo.hpp:
+
+c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/algorithm:
+
+c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/hashtable.h:
+
+c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/hashtable_policy.h:
+
+c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/refwrap.h:
+
+c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/stl_vector.h:
+
+c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/unordered_map.h:
+
+c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/bits/vector.tcc:
+
+c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/functional:
+
+c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/pstl/glue_algorithm_defs.h:
+
+c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/unordered_map:
+
+c:/program\ files/ti/msp430-gcc/msp430-elf/include/c++/9.3.1/vector:

@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CoreRobot.dir/__/source/motors.cpp.obj.d"
   "CMakeFiles/CoreRobot.dir/__/source/pins.cpp.obj"
   "CMakeFiles/CoreRobot.dir/__/source/pins.cpp.obj.d"
+  "CMakeFiles/CoreRobot.dir/__/source/servo.cpp.obj"
+  "CMakeFiles/CoreRobot.dir/__/source/servo.cpp.obj.d"
   "CMakeFiles/CoreRobot.dir/main.cpp.obj"
   "CMakeFiles/CoreRobot.dir/main.cpp.obj.d"
   "CMakeFiles/CoreRobot.dir/source/robot.cpp.obj"

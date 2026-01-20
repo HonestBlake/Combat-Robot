@@ -23,6 +23,11 @@
 			}
 		]
 	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
 	"dependencies" : 
 	[
 		{
@@ -31,6 +36,12 @@
 	],
 	"id" : "CoreRobotHex::@1282256927556db61424",
 	"name" : "CoreRobotHex",
+	"orderDependencies" : 
+	[
+		{
+			"id" : "CoreRobot::@1282256927556db61424"
+		}
+	],
 	"paths" : 
 	{
 		"build" : "combatRobot/coreRobot",

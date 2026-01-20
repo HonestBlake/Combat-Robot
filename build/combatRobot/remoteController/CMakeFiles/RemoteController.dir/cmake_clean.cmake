@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/RemoteController.dir/__/source/motors.cpp.obj.d"
   "CMakeFiles/RemoteController.dir/__/source/pins.cpp.obj"
   "CMakeFiles/RemoteController.dir/__/source/pins.cpp.obj.d"
+  "CMakeFiles/RemoteController.dir/__/source/servo.cpp.obj"
+  "CMakeFiles/RemoteController.dir/__/source/servo.cpp.obj.d"
   "CMakeFiles/RemoteController.dir/main.cpp.obj"
   "CMakeFiles/RemoteController.dir/main.cpp.obj.d"
   "CMakeFiles/RemoteController.dir/source/remote.cpp.obj"

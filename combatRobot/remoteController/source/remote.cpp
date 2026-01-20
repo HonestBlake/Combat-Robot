@@ -1,6 +1,7 @@
 #include "remote.hpp"
 #include "device.hpp"
 #include "ir.hpp"
+#include "pins.hpp"
 #include "robotValues.hpp"
 #include <bitset>
 
@@ -8,111 +9,121 @@
 
 namespace combatRobot::remoteController::remote{ // #scope: remote
 
-    Remote::Remote(): m_ir(IR_EMITTER_PORT, BIT_PERIOD, SIGNAL_FREQUENCY), m_redLED(RED_LED_PORT, State::LOW), m_greenLED(GREEN_LED_PORT, State::LOW), m_leftJoyStick(LEFT_JOYSTICK_PORT){
+    Remote::Remote(): m_ir(IR_EMITTER_PORT, BIT_PERIOD, SIGNAL_FREQUENCY), m_redLED(RED_LED_PORT, State::LOW), m_greenLED(GREEN_LED_PORT, State::LOW), m_leftJoyStick(LEFT_JOYSTICK_PORT), m_rightJoyStick(RIGHT_JOYSTICK_PORT), m_flipperUp(FLIPPER_UP_PORT), m_flipperDown(FLIPPER_DOWN_PORT){
         
     }
 
     void Remote::run(){
         Device::stopWDT();
         Device::enableGPIO();
-
-        Command leftPrevCommand = Command::NULL_COMMAND;
-
+        m_greenLED.write(State::HIGH);
         while(true){
-            Device::delay(100);
-            float voltage = m_leftJoyStick.read();
-            if(voltage < 0.200f){
-                // 100
-                if(leftPrevCommand == Command::LEFT_FORWARD_100) continue;
-                m_ir.send<SIGNAL_BITS>(encodeCommand(Command::LEFT_FORWARD_100));
-                leftPrevCommand = Command::LEFT_FORWARD_100;
-            }else if(voltage < 0.500f){
-                // 75
-                if(leftPrevCommand == Command::LEFT_FORWARD_75) continue;
-                m_ir.send<SIGNAL_BITS>(encodeCommand(Command::LEFT_FORWARD_75));
-                leftPrevCommand = Command::LEFT_FORWARD_75;
-            }else if(voltage < 0.800f){
-                // 50
-                if(leftPrevCommand == Command::LEFT_FORWARD_50) continue;
-                m_ir.send<SIGNAL_BITS>(encodeCommand(Command::LEFT_FORWARD_50));
-                leftPrevCommand = Command::LEFT_FORWARD_50;
-            }else if(voltage < 1.100f){
-                // 25
-                if(leftPrevCommand == Command::LEFT_FORWARD_25) continue;
-                m_ir.send<SIGNAL_BITS>(encodeCommand(Command::LEFT_FORWARD_25));
-                leftPrevCommand = Command::LEFT_FORWARD_25;
-            }else if(voltage < 1.900f){
-                // STOP
-                if(leftPrevCommand == Command::LEFT_STOP) continue;
-                m_ir.send<SIGNAL_BITS>(encodeCommand(Command::LEFT_STOP));
-                leftPrevCommand = Command::LEFT_STOP;
-            }else if(voltage < 2.400f){
-                // 25
-                if(leftPrevCommand == Command::LEFT_REVERSE_25) continue;
-                m_ir.send<SIGNAL_BITS>(encodeCommand(Command::LEFT_REVERSE_25));
-                leftPrevCommand = Command::LEFT_REVERSE_25;
-            }else if(voltage < 2.700f){
-                // 50
-                if(leftPrevCommand == Command::LEFT_REVERSE_50) continue;
-                m_ir.send<SIGNAL_BITS>(encodeCommand(Command::LEFT_REVERSE_50));
-                leftPrevCommand = Command::LEFT_REVERSE_50;
-            }else if(voltage < 3.000f){
-                // 75
-                if(leftPrevCommand == Command::LEFT_REVERSE_75) continue;
-                m_ir.send<SIGNAL_BITS>(encodeCommand(Command::LEFT_REVERSE_75));
-                leftPrevCommand = Command::LEFT_REVERSE_75;
-            }else{
-                // 100
-                if(leftPrevCommand == Command::LEFT_REVERSE_100) continue;
-                m_ir.send<SIGNAL_BITS>(encodeCommand(Command::LEFT_REVERSE_100));
-                leftPrevCommand = Command::LEFT_REVERSE_100;
-            }
+            handleRightJoyStick();
+            handleLeftJoyStick();
+            handleFlipperUp();
+            handleFlipperDown();
         }
     }
 
-        // Pin<Mode::OUTPUT> led1 = Pin<Mode::OUTPUT>(Port::P1_0, State::LOW);
-        // Pin<Mode::OUTPUT> led2 = Pin<Mode::OUTPUT>(Port::P9_7, State::LOW);
-        // Pin<Mode::INPUT> p0 = Pin<Mode::INPUT>(Port::P2_6);
-        // Pin<Mode::INPUT> p1 = Pin<Mode::INPUT>(Port::P3_3);
-        // Pin<Mode::INPUT> p2 = Pin<Mode::INPUT>(Port::P3_6);
-        // Pin<Mode::INPUT> p3 = Pin<Mode::INPUT>(Port::P3_7);
-        // Pin<Mode::INPUT> p4 = Pin<Mode::INPUT>(Port::P2_2);
-        // Pin<Mode::INPUT> p5 = Pin<Mode::INPUT>(Port::P1_3);
-        // Pin<Mode::INPUT> p6 = Pin<Mode::INPUT>(Port::P3_0);
-        // Pin<Mode::INPUT> p7 = Pin<Mode::INPUT>(Port::P3_1);
-        // Pin<Mode::INPUT> but = Pin<Mode::INPUT>(Port::P2_3);
-        // std::bitset<8> bits;
-        // while(true){
-        //     if(but){
-        //         bits[7] = static_cast<bool>(p0.read());
-        //         bits[6] = static_cast<bool>(p1.read());
-        //         bits[5] = static_cast<bool>(p2.read());
-        //         bits[4] = static_cast<bool>(p3.read());
-        //         bits[3] = static_cast<bool>(p4.read());
-        //         bits[2] = static_cast<bool>(p5.read());
-        //         bits[1] = static_cast<bool>(p6.read());
-        //         bits[0] = static_cast<bool>(p7.read());
-        //         m_ir.send<8>(bits);
-        //         led1.write(State::HIGH);
-        //         Device::delay(200);
-        //         led1.write(State::LOW);
-        //     }
-        //     led2.write(State::HIGH);
-        //     Device::delay(200);
-        //     led2.write(State::LOW);
-        //     Device::delay(500);
-        // }
-    // }
+// Private methods
 
     std::bitset<SIGNAL_BITS> Remote::encodeCommand(const Command p_command){
         std::bitset<SIGNAL_BITS> signal;
-        signal[SIGNAL_BITS - 1] = 1; // Start bit 1
-        signal[SIGNAL_BITS - 2] = 0; // Start bit 2
+        signal[SIGNAL_BITS - 1] = START_BIT_0;
+        signal[SIGNAL_BITS - 2] = START_BIT_1; 
         std::bitset<COMMAND_BITS> command = static_cast<std::bitset<COMMAND_BITS>>(static_cast<std::uint8_t>(p_command));
         for(std::size_t index = 0; index < COMMAND_BITS; index++){
-            signal[SIGNAL_BITS - index - 1 - START_BIT_LENTH] = command[COMMAND_BITS - index - 1];
+            signal[SIGNAL_BITS - index - 1 - START_BIT_LENGTH] = command[COMMAND_BITS - index - 1];
         }
         return signal;
+    }
+
+    void Remote::handleLeftJoyStick(){
+        static Command previous = Command::NULL_COMMAND;
+        static Command current = Command::NULL_COMMAND;
+        static std::uint8_t repeatCount = 0;
+        float voltage = m_leftJoyStick.read();      
+        if(voltage < LEFT_REVERSE_75_THRESHOLD){ // Reverse 100
+            current = Command::LEFT_REVERSE_100;
+        }else if(voltage < LEFT_REVERSE_50_THRESHOLD){ // Reverse 75
+            current = Command::LEFT_REVERSE_75;
+        }else if(voltage < LEFT_REVERSE_25_THRESHOLD){ // Reverse 50
+            current = Command::LEFT_REVERSE_50;
+        }else if(voltage < LEFT_STOP_THRESHOLD){ // Reverse 25
+            current = Command::LEFT_REVERSE_25;
+        }else if(voltage < LEFT_FORWARD_25_THRESHOLD){ // Stop
+            current = Command::LEFT_STOP;
+        }else if(voltage < LEFT_FORWARD_50_THRESHOLD){ // Forward 25
+            current = Command::LEFT_FORWARD_25;
+        }else if(voltage < LEFT_FORWARD_75_THRESHOLD){ // Forward 50
+            current = Command::LEFT_FORWARD_50;
+        }else if(voltage < LEFT_FORWARD_100_THRESHOLD){ // Forward 75
+            current = Command::LEFT_FORWARD_75;
+        }else{ // Forward 100
+            current = Command::LEFT_FORWARD_100;
+        }
+        if(current == previous && repeatCount++ < REPEAT_LIMIT) return;
+        m_ir.send<SIGNAL_BITS>(encodeCommand(current));
+        Device::delay(COMMAND_DELAY); // Small delay to ensure command is sent properly
+        previous = current;
+        repeatCount = 0;
+    }
+
+    void Remote::handleRightJoyStick(){
+        static Command previous = Command::NULL_COMMAND;
+        static Command current = Command::NULL_COMMAND;
+        static std::uint8_t repeatCount = 0;
+        float voltage = m_rightJoyStick.read();
+        if(voltage < RIGHT_REVERSE_75_THRESHOLD){ // Reverse 100
+            current = Command::RIGHT_REVERSE_100;
+        }else if(voltage < RIGHT_REVERSE_50_THRESHOLD){ // Reverse 75
+            current = Command::RIGHT_REVERSE_75;
+        }else if(voltage < RIGHT_REVERSE_25_THRESHOLD){ // Reverse 50
+            current = Command::RIGHT_REVERSE_50;
+        }else if(voltage < RIGHT_STOP_THRESHOLD){ // Reverse 25
+            current = Command::RIGHT_REVERSE_25;
+        }else if(voltage < RIGHT_FORWARD_25_THRESHOLD){ // Stop
+            current = Command::RIGHT_STOP;
+        }else if(voltage < RIGHT_FORWARD_50_THRESHOLD){ // Forward 25
+            current = Command::RIGHT_FORWARD_25;
+        }else if(voltage < RIGHT_FORWARD_75_THRESHOLD){ // Forward 50
+            current = Command::RIGHT_FORWARD_50;
+        }else if(voltage < RIGHT_FORWARD_100_THRESHOLD){ // Forward 75
+            current = Command::RIGHT_FORWARD_75;
+        }else{ // Forward 100
+            current = Command::RIGHT_FORWARD_100;
+        }
+        if(current == previous && repeatCount++ < REPEAT_LIMIT) return;
+        m_ir.send<SIGNAL_BITS>(encodeCommand(current));
+        Device::delay(COMMAND_DELAY); // Small delay to ensure command is sent properly
+        previous = current;
+        repeatCount = 0;
+    }
+
+    void Remote::handleFlipperUp(){
+        static State previous = State::LOW;
+        static std::uint8_t repeatCount = 0;
+        if(m_flipperUp){
+            if(previous == State::HIGH && repeatCount++ < REPEAT_LIMIT) return;
+            m_ir.send<SIGNAL_BITS>(encodeCommand(Command::FLIPPER_UP));
+            previous = State::HIGH;
+            repeatCount = 0;
+        }else{
+            previous = State::LOW;
+        }
+    }
+
+    void Remote::handleFlipperDown(){
+        static State previous = State::LOW;
+        static std::uint8_t repeatCount = 0;
+        if(m_flipperDown){
+            if(previous == State::HIGH && repeatCount++ < REPEAT_LIMIT) return;
+            m_ir.send<SIGNAL_BITS>(encodeCommand(Command::FLIPPER_DOWN));
+            previous = State::HIGH;
+            repeatCount = 0;
+        }else{
+            previous = State::LOW;
+        }
     }
 
 } // #end: remote

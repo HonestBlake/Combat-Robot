@@ -6,6 +6,7 @@
 #include "pins.hpp"
 #include "robotValues.hpp"
 #include <cstdint>
+#include "servo.hpp"
 
 namespace combatRobot::coreRobot::robot{ // #scope: robot
 
@@ -16,6 +17,9 @@ namespace combatRobot::coreRobot::robot{ // #scope: robot
     constexpr Port RIGHT_IN1 = Port::P2_4;
     constexpr Port RIGHT_IN2 = Port::P2_5;
     constexpr Port RIGHT_ENA = Port::P2_6;
+    constexpr Port FLIPPER_SIGNAL = Port::P2_7; // TODO
+    constexpr float FLIPPER_UP_ANGLE = 90.0f;
+    constexpr float FLIPPER_DOWN_ANGLE = 0.0f;
 
     // #class: Robot
     class Robot final{
@@ -26,23 +30,15 @@ namespace combatRobot::coreRobot::robot{ // #scope: robot
     // Public Static Methods
         void run();
         static Command decodeCommand(const std::bitset<SIGNAL_BITS>& p_signal);
+        static void configureServo();
     // Public Methods
         void runCommand(const Command p_command);
     private:
     // Private Members
+        Pin<Mode::OUTPUT> m_redLED;
+        Pin<Mode::OUTPUT> m_greenLED;
         IRReceiver m_ir = IRReceiver(IR_IN, BIT_PERIOD);
         Motor m_left, m_right;
-
-        std::array<Pin<Mode::OUTPUT>, 8> m_leds = {
-            Pin<Mode::OUTPUT>(Port::P3_3, State::LOW),
-            Pin<Mode::OUTPUT>(Port::P3_6, State::LOW),
-            Pin<Mode::OUTPUT>(Port::P3_7, State::LOW),
-            Pin<Mode::OUTPUT>(Port::P2_2, State::LOW),
-            Pin<Mode::OUTPUT>(Port::P1_3, State::LOW),
-            Pin<Mode::OUTPUT>(Port::P3_0, State::LOW),
-            Pin<Mode::OUTPUT>(Port::P3_1, State::LOW),
-            Pin<Mode::OUTPUT>(Port::P2_3, State::LOW)
-        };
     };
 
 } // #end: robot

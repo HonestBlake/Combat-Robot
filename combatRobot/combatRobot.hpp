@@ -51,6 +51,10 @@ namespace combatRobot{
         class IREmitter;
     } // #end: ir
 
+    // #namespace: servo
+    inline namespace servo{
+        class Servo;
+    } // #end: servo
 
 } // #end: combatRobot
 

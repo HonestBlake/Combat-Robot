@@ -1,3 +1,0 @@
-# Hashes of file build rules.
-3891dedbd124faaa4368e557ce7100f6 C:/Users/blake/School/Robotics Project Lab/Combat Robot/coreRobot.hex
-1fd4ac4a0b8019abae0ecabbd83bc989 C:/Users/blake/School/Robotics Project Lab/Combat Robot/remoteController.hex
